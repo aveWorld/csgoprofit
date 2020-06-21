@@ -623,7 +623,10 @@ to {
 }
 
 
-
+.distribution {
+  border: 1px solid #FFD700;
+  padding: 5px 0 5px 5px;
+}
 
 .quality-item {
     height: 4rem;
@@ -791,6 +794,24 @@ to {
     }
     .logo {
         margin-left: 1rem;
+    }
+    .line {
+      padding: 0 5px 0 5px;
+    }
+    .section-title {
+      padding-top: 3rem;
+    }
+    .Navbar {
+      background-color: rgba(0, 0, 0, .8);
+    }
+    .redline_stickers {
+      width: 90%;
+    }
+    .floats {
+      width: 70%;
+    }
+    .patterns-img {
+      width: 90%;
     }
     
   }
