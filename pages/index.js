@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>CS GO Profit</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>CS GO Profit - Your Tradepedia</title>
+        <meta name="description" content="All about CS GO Investments, Contracts, Trade and more. Start to make profit on CS GO right now." />
       </Head>
       <Navbar />
       <section className="section-1">

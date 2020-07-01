@@ -1,12 +1,17 @@
 import { faTrademark } from "@fortawesome/free-solid-svg-icons";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Head from 'next/head'
 
-export default function trade() {
+const trade = () => {
     return (
     <div className="container-blog">
+        <Head>
+            <title>CS GO Trade</title>
+            <meta name="description" content="Learn how to make profit in CS GO trading" />
+        </Head>
         <Navbar />
-        <div className="container-wrapper">
+        <main className="container-wrapper">
             <h1 className="blog-title">CS GO Trade</h1>
             <p className="blog-p">Now it’s very easy to start trading and earning from 15% of your bank every month. 
             Each trader has their own schemes, but they all come down to one thing - reselling skins on different sites.</p>
@@ -61,8 +66,10 @@ export default function trade() {
             <p className="blog-p">A pattern is a texture of paints that is applied to the skin. The game generates this texture randomly by moving the skin up/down/left/righ in any direction, 
                 thus making it look different. So this is the reason why two skins with same quality and exterior can look different from each other.</p>
             <p className="blog-p">A rare pattern can increase the price of a skin a couple of times. We have our patterns page where you can find every pattern in the game</p>
-        </div>
+        </main>
         <Footer />
     </div>
     )
 }
+
+export default trade

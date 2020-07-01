@@ -1,10 +1,15 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-export default function tradeups() {
+import Head from 'next/head'
+const tradeups = () => {
     return (
         <div className="container-blog">
+             <Head>
+            <title>CS GO Trade Ups</title>
+            <meta name="description" content="Learn about cool and profitable CS GO Trade Ups" />
+            </Head>
             <Navbar />
-            <div className="container-wrapper">
+            <main className="container-wrapper">
                 <h1 className="blog-title">CS GO Trade Up Contracts</h1>
                 <p className="blog-p">skins in cs go are distributed among collections, each collection has</p>
                 <ul>
@@ -29,14 +34,15 @@ export default function tradeups() {
                 But if you use 9 other skins with 1 outcome each then it would be a 10% chance or 1 in 10, because there are only 10 different outcomes.
                 </p>   
                 <p className="blog-p">It's also very useful to know what exacly float your crafted skin will have. It can be calculated by formula:</p>
-                <p className="blog-p">Trade UP Float Value = 
-                (<span className="max-float">Max Float</span> - <span className="min-float">Min Float</span>) * <span className="avg">AVG</span> + <span className="min-float">Min Float</span></p>
+                <h2 className="float-value">Trade UP Float Value = 
+                (<span className="max-float">Max Float</span> - <span className="min-float">Min Float</span>) * <span className="avg">AVG</span> + <span className="min-float">Min Float</span></h2>
                 <p className="blog-p"><span className="max-float">Max Float</span> - maximal float of outputs</p>
                 <p className="blog-p"><span className="min-float">Min Float</span> - minimal float of outputs</p>
                 <p className="blog-p"><span className="avg">AVG</span> - sum of your all input floats divided by their amount</p>
-                <p></p>
-            </div>
+            </main>
             <Footer />
         </div>
     )
 }
+
+export default tradeups

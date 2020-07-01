@@ -1,0 +1,316 @@
+/* blog styling */
+
+
+.blog {
+    background-color: #2b2d42;
+}
+
+.blog-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+p {
+    color: #edf2f4;
+}
+
+h3 {
+    color: #edf2f4;
+}
+
+.three-art {
+    padding-top: 8rem;
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+}
+
+.three-art img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.article {
+    padding: 0 2rem;
+    flex-basis: 33.3%;
+}
+
+.article:hover {
+    cursor: pointer;
+}
+
+.article:nth-child(even) {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.article-title {
+    color: #edf2f4;
+    font-size: 2.6rem;
+    margin: 0;
+}
+
+.article-subtitle {
+    color: #edf2f4;
+    font-size: 1.2rem;
+}
+
+.hover-green:hover .article-title{
+    color: #2a9d8f;
+}
+
+.hover-orange:hover .article-title{
+    color: #e76f51;
+}
+.hover-yellow:hover .article-title{
+    color: #e9c46a;
+}
+
+.promocodes-art > img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.promocodes-art {
+    padding-top: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.promocodes-art:hover {
+    cursor: pointer;
+}
+
+.promocodes-art--h1 {
+    position: absolute;
+    z-index: 999;
+    left: 37%;
+    top: 35%;
+    font-size: 4.5rem;
+    color: red;
+}
+
+
+
+/* top skins styling */
+
+.container-wrapper > div {
+    padding: 1rem 0;
+}
+
+.img-width {
+    width: 100%;
+    height: auto;
+}
+
+.advantages {
+    color: #39ff14;
+}
+
+.advantages-p::before {
+    content: "+";
+    color: #39ff14;
+    padding-right: .5rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.disadvantages {
+    color: red
+}
+
+.disadvantages-p::before {
+    content: "-";
+    color: red;
+    padding-right: .5rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.lootfarm-cashback {
+    width: 90%;
+    height: auto;
+}
+
+.dmarket-target {
+    width: 60%;
+    height: auto;
+}
+
+.buff-img {
+    width: 100%;
+    height: auto;
+}
+
+.websites-link {
+    color: #8A2BE2;
+}
+
+.skin-cards {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.skin-card {
+    margin: 1rem .5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+
+.skin-card--footer {
+    width: 100%;
+}
+
+.success {
+    background-color: #2a7a2a;
+}
+
+.failure {
+    background-color: #812727;
+}
+
+.skin-card--header {
+    background-color: rgb(7, 64, 95);
+}
+
+
+.skin-card--main {
+    background-color: rgb(7, 64, 95);
+    width: 100%;
+    height: 40%;
+}
+
+.skin-card--main > p {
+    margin: 0;
+    text-align: center;
+}
+
+
+
+.skin-card--header > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-percantage {
+    float: right;
+    padding-right: .3rem;
+}
+
+.card-profit {
+    padding-left: .3rem;
+}
+
+.collection{
+    display: flex;
+    align-items: center;
+}
+
+.collection > span {
+    color: #edf2f4;
+    font-size: 1.3rem;
+}
+
+.outcomes {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.avg-float {
+    color: #edf2f4;
+    border-bottom: 3px solid #ef233c;
+    margin-left: 4rem;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+.number {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .skin-cards {
+        flex-wrap: wrap;
+    }
+    .skin-card {
+        flex-basis: calc(50% - 2rem);
+        margin: 3rem 1rem;
+    }
+
+    .skin-card--main {
+        height: 35%;
+    }
+
+    .blog-wrapper {
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 996px) {
+    .blog-wrapper {
+        width: 95%;
+    }
+    .promocodes-art--h1 {
+        left: 30%;
+        top: 30%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .three-art {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .article {
+        flex-basis: 95%;
+        padding: 2rem 0;
+    }
+    .article h3, p {
+        text-align: center;
+    }
+    .article > img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .article:nth-child(even) {
+        border: none;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .skin-card {
+        flex-basis: calc(50% - 2rem);
+        margin: 2rem 1rem;
+    }
+
+    .skin-card--main {
+        height: 50%;
+    }
+
+    .skin-card--main > p {
+        font-size: .9rem;
+    }
+
+    .collection > img {
+        width: 40%;
+    }
+
+    .promocodes-art > img {
+        height: 25rem;
+    }
+
+    .promocodes-art--h1 {
+        top: 15%;
+    }
+  }

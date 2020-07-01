@@ -3,13 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Anime from 'react-anime';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Head from 'next/head'
 
 
-export default function Investments() {
+const Investments = () => {
     return (
     <div className="container-blog">
+        <Head>
+            <title>CS GO Investments</title>
+            <meta name="description" content="Learn how to make profitable investments in CS GO" />
+        </Head>
         <Navbar />
-        <div className="container-wrapper">
+        <main className="container-wrapper">
             <h1 className="blog-title">CS GO Investments</h1>
             <p className="blog-p">If you want to get profit without wasting time, then investment is the perfect solution for you.
             All you have to do is invest in cs go items and wait until they grow in value.
@@ -60,7 +65,7 @@ export default function Investments() {
             in Steam your account may be banned and all your money will be lost, but you should not worry with a competent approach the probability of a ban is minimal.
             </p>
 
-            <h3 className="blog-subtitle">Two main principles of good investments</h3>
+            <h2 className="blog-subtitle">Two main principles of good investments</h2>
 
             <p className="blog-p">Split the bank: for example, we have 1000 dollars, we have to divide it conditionally into 10 parts of 100 dollars each and invest from each of these parts in different skins, 
             this is done for greater stability.</p>
@@ -82,9 +87,11 @@ export default function Investments() {
             so we highly recommend to check it.
             </p>  
             
-        </div>
+        </main>
         <Footer />
     </div>
 
     )
 }
+
+export default Investments
