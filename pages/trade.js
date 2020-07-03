@@ -2,6 +2,8 @@ import { faTrademark } from "@fortawesome/free-solid-svg-icons";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Head from 'next/head'
+import Link from 'next/link'
+
 
 const trade = () => {
     return (
@@ -24,7 +26,7 @@ const trade = () => {
             If you will sell in the steam, then you won't wait tradelock but you will pay a commission of 13% and will be up 7%.</p>
             <p className="blog-p">
             With such a simple scheme, we can get pretty good profit depends on how many our orders will work. 
-            There are still a lot of such schemes, about some we will write in our blog.
+            There are still a lot of such schemes, about some we will write in our <Link href="/blog"><a className="blog-link">Blog</a></Link>.
             </p>
             <h2 className="blog-subtitle">How to find skins to buy</h2>
             <p className="blog-p">To finding the most profitable skins we are using special skin tables</p>
@@ -60,7 +62,7 @@ const trade = () => {
             <p className="blog-p">FT - Field Tested, range from 0.15 - 0.38</p>
             <p className="blog-p">WW - Well Worn, range from 0.38 - 0.44</p>
             <p className="blog-p">BS - Batle Scared, range from 0.44 - 1.0</p>
-            <p className="blog-p">Some skins have their own rare floats, we will write about this skins on our Blog. Usually the lower the float, the better </p>
+            <p className="blog-p">Some skins have their own rare floats, we will write about this skins in our <Link href="/blog"><a className="blog-link">Blog</a></Link>. Usually the lower the float, the better </p>
             <h2 className="blog-subtitle">Patterns</h2>
             <img src="patterns.png" alt="pattern" className="patterns-img"/>
             <p className="blog-p">A pattern is a texture of paints that is applied to the skin. The game generates this texture randomly by moving the skin up/down/left/righ in any direction, 

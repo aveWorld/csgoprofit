@@ -4,6 +4,7 @@ import Anime from 'react-anime';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Head from 'next/head'
+import Link from 'next/link'
 
 
 const Investments = () => {
@@ -83,7 +84,7 @@ const Investments = () => {
             Because the capsules with the same growth graphs will be very similar, which gives us the opportunity to determine when to invest with a simple comparison. 
             Red circles indicate the degree of growth of the capsule from Berlin, as we can now see a great opportunity to invest in it.</p>
             <p className="blog-p">
-            There are many more different aspects of how to determine when to invest. We will regularly write about the best in our opinion investments in our blog, 
+            There are many more different aspects of how to determine when to invest. We will regularly write about the best in our opinion investments in our <Link href="/blog"><a className="blog-link">Blog</a></Link>, 
             so we highly recommend to check it.
             </p>  
             
