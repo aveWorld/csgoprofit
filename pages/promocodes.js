@@ -23,7 +23,7 @@ const promocodes = () => (
             <div className="cards">
             <div className="card">
                 <div className="card-header">
-                   <a href="https://csgoroll.com/r/CSPROFIT" target="_blank"><img src="csgoroll.png" alt="csgoroll" className="card-img"/></a> 
+                   <a href="https://csgoroll.com/r/CSPROFIT" target="_blank"><img src="csgoroll.webp" alt="csgoroll" className="card-img"/></a> 
                 </div>
                 <div className="card-main">
                     <p>3 free cases</p>
@@ -35,7 +35,7 @@ const promocodes = () => (
             </div>
             <div className="card">
                 <div className="card-header">
-                   <a href="https://csgo500.com/rewards" target="_blank"><img src="csgo500.png" alt="csgoro500" className="card-img"/></a> 
+                   <a href="https://csgo500.com/rewards" target="_blank"><img src="csgo500.webp" alt="csgoro500" className="card-img"/></a> 
                 </div>
                 <div className="card-main">
                     <p>1,000 Bux</p>
@@ -47,7 +47,7 @@ const promocodes = () => (
             </div>
             <div className="card">
                 <div className="card-header">
-                   <a href="https://csgospeed.com/r/CSGOPROFIT" target="_blank"><img src="csgospeed.png" alt="csgospeed" className="card-img"/></a> 
+                   <a href="https://csgospeed.com/r/CSGOPROFIT" target="_blank"><img src="csgospeed.webp" alt="csgospeed" className="card-img"/></a> 
                 </div>
                 <div className="card-main">
                     <p>0.5 $</p>
@@ -95,7 +95,7 @@ const promocodes = () => (
             </div>
             <div className="card">
                 <div className="card-header">
-                   <a href="https://csgofast123.com/#r/e5reoi-csgo" target="_blank"><img src="csgofast.png" alt="csgofast" className="card-img"/></a> 
+                   <a href="https://csgofast123.com/#r/e5reoi-csgo" target="_blank"><img src="csgofast.webp" alt="csgofast" className="card-img"/></a> 
                 </div>
                 <div className="card-main">
                     <p>3 $</p>
@@ -107,7 +107,7 @@ const promocodes = () => (
             </div>
             <div className="card">
                 <div className="card-header">
-                   <a href="https://hellcase.com/fcsgoprofit" target="_blank"><img src="hellcase.png" alt="hell case" className="card-img"/></a> 
+                   <a href="https://hellcase.com/fcsgoprofit" target="_blank"><img src="hellcase.webp" alt="hell case" className="card-img"/></a> 
                 </div>
                 <div className="card-main">
                     <p>0.5 $</p>

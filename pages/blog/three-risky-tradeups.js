@@ -14,11 +14,11 @@ const riskyTradeups = () => (
             <p className="blog-p">tradeup cost : 2.86$</p>
             <p className="blog-p">profitability : 67.13%</p>
             <div className="collection">
-                <img src="/mirage_collection.jpg" alt="mirage collection"/>
+                <img src="/mirage_collection.webp" alt="mirage collection"/>
                 <span> - 1 Industrial Grade skin from mirage collection</span>
             </div>
             <div className="collection">
-                <img src="/italy_collection.jpg" alt="italy collection"/>
+                <img src="/italy_collection.webp" alt="italy collection"/>
                 <span> - 9 Industrial Grade skins from italy collection</span>
             </div>
             <span className="avg-float">average float &ge; 0.88</span>
@@ -27,7 +27,7 @@ const riskyTradeups = () => (
             <div className="skin-cards">
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/candy_apple.png" alt="Glock-18 | Candy Apple"/>
+                        <img src="/candy_apple.webp" alt="Glock-18 | Candy Apple"/>
                     </div>
                     <div className="skin-card--main">
                             <p>Glock-18 | Candy Apple</p>
@@ -41,7 +41,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/sawed-off_fullStop.png" alt="Sawed-off | full Stop"/>
+                        <img src="/sawed-off_fullStop.webp" alt="Sawed-off | full Stop"/>
                     </div>
                     <div className="skin-card--main">
                             <p>Sawed-Off | Full Stop</p>
@@ -55,7 +55,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/mp7_anodizedNavy.png" alt="MP7 | anodized Navy"/>
+                        <img src="/mp7_anodizedNavy.webp" alt="MP7 | anodized Navy"/>
                     </div>
                     <div className="skin-card--main">
                             <p>MP7 | Anodized Navy</p>
@@ -72,7 +72,7 @@ const riskyTradeups = () => (
             <div className="skin-cards">
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/ump-45_blaze.png" alt="ump-45 | Blaze"/>
+                        <img src="/ump-45_blaze.webp" alt="ump-45 | Blaze"/>
                     </div>
                     <div className="skin-card--main">
                             <p>UMP-45 | Blaze</p>
@@ -86,7 +86,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/mp9_hotRod.png" alt="MP9 | hot Rod"/>
+                        <img src="/mp9_hotRod.webp" alt="MP9 | hot Rod"/>
                     </div>
                     <div className="skin-card--main">
                             <p>MP9 | Hot Rod</p>
@@ -100,7 +100,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/mac-10_amberFade.png" alt="Mac-10 | amber Fade"/>
+                        <img src="/mac-10_amberFade.webp" alt="Mac-10 | amber Fade"/>
                     </div>
                     <div className="skin-card--main">
                             <p>MAC-10 | Amber Fade</p>
@@ -118,15 +118,15 @@ const riskyTradeups = () => (
             <p className="blog-p">tradeup cost : 7.31$</p>
             <p className="blog-p">profitability : 90.01%</p>
             <div className="collection">
-                <img src="/dust_collection.jpg" alt="mirage collection"/>
+                <img src="/dust_collection.webp" alt="mirage collection"/>
                 <span> - 1 Industrial Grade skin from dust collection</span>
             </div>
             <div className="collection">
-                <img src="/office_collection.jpg" alt="italy collection"/>
+                <img src="/office_collection.webp" alt="italy collection"/>
                 <span> - 1 Industrial Grade skin from office collection</span>
             </div>
             <div className="collection">
-                <img src="/train_collection.jpg" alt="italy collection"/>
+                <img src="/train_collection.webp" alt="italy collection"/>
                 <span> - 8 Industrial Grade skins from train collection</span>
             </div>
             <span className="avg-float">average float &le; 0.12</span>
@@ -134,7 +134,7 @@ const riskyTradeups = () => (
             <div className="skin-cards">
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/awp_snakeCamo.png" alt="AWP | snake Camo"/>
+                        <img src="/awp_snakeCamo.webp" alt="AWP | snake Camo"/>
                     </div>
                     <div className="skin-card--main">
                             <p>AWP | Snake Camo</p>
@@ -148,7 +148,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/sawed-off_copper.png" alt="sawed-off | Copper"/>
+                        <img src="/sawed-off_copper.webp" alt="sawed-off | Copper"/>
                     </div>
                     <div className="skin-card--main">
                             <p>Sawed-Off | Copper</p>
@@ -162,7 +162,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/aug_copperhead.png" alt="AUG | Copper Head"/>
+                        <img src="/aug_copperhead.webp" alt="AUG | Copper Head"/>
                     </div>
                     <div className="skin-card--main">
                             <p>AUG | Copperhead</p>
@@ -176,7 +176,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/mp7_whiteout.png" alt="MP7 | whiteout"/>
+                        <img src="/mp7_whiteout.webp" alt="MP7 | whiteout"/>
                     </div>
                     <div className="skin-card--main">
                             <p>MP7 | Whiteout</p>
@@ -192,7 +192,7 @@ const riskyTradeups = () => (
             <div className="skin-cards">
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/sawed-off_amberFade.png" alt="sawed-off | amber Fade"/>
+                        <img src="/sawed-off_amberFade.webp" alt="sawed-off | amber Fade"/>
                     </div>
                     <div className="skin-card--main">
                             <p>Sawed-Off | Amber Fade</p>
@@ -207,7 +207,7 @@ const riskyTradeups = () => (
 
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/deagle_urbanRubble.png" alt="Desert Eagle | urban Rubble"/>
+                        <img src="/deagle_urbanRubble.webp" alt="Desert Eagle | urban Rubble"/>
                     </div>
                     <div className="skin-card--main">
                             <p>Desert Eagle | Urban Rubble</p>
@@ -221,7 +221,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/p2000_silver.png" alt="P2000 | Silver"/>
+                        <img src="/p2000_silver.webp" alt="P2000 | Silver"/>
                     </div>
                     <div className="skin-card--main">
                             <p>P2000 | Silver</p>
@@ -239,11 +239,11 @@ const riskyTradeups = () => (
             <p className="blog-p">tradeup cost : 17.81$</p>
             <p className="blog-p">profitability : 99.72%</p>
             <div className="collection">
-                <img src="/norse_collection.jpg" alt="mirage collection"/>
+                <img src="/norse_collection.webp" alt="mirage collection"/>
                 <span> - 1 Mil-Spec skin from norse collection</span>
             </div>
             <div className="collection">
-                <img src="/dust_collection.jpg" alt="italy collection"/>
+                <img src="/dust_collection.webp" alt="italy collection"/>
                 <span> - 9 Mil-Spec skins from dust collection</span>
             </div>
             <span className="avg-float">average float &le; 0.14</span>
@@ -251,7 +251,7 @@ const riskyTradeups = () => (
             <div className="skin-cards">
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/p2000_amberFade.png" alt="P2000 | Amber Fade"/>
+                        <img src="/p2000_amberFade.webp" alt="P2000 | Amber Fade"/>
                     </div>
                     <div className="skin-card--main">
                             <p>P2000 | Amber Fade</p>
@@ -265,7 +265,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/aug_flameJormugandr.png" alt="AUG | Flame Jörmungandr"/>
+                        <img src="/aug_flameJormugandr.webp" alt="AUG | Flame Jörmungandr"/>
                     </div>
                     <div className="skin-card--main">
                             <p>AUG | Flame Jörmungandr</p>
@@ -279,7 +279,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/p90_astralJormungandr.png" alt="P90 | Astral Jörmungandr"/>
+                        <img src="/p90_astralJormungandr.webp" alt="P90 | Astral Jörmungandr"/>
                     </div>
                     <div className="skin-card--main">
                             <p>P90 | Astral Jörmungandr</p>
@@ -293,7 +293,7 @@ const riskyTradeups = () => (
                 </div>
                 <div className="skin-card">
                     <div className="skin-card--header">
-                        <img src="/deagle_emeraldJormugandr.png" alt="Desert Eagle | Emerald Jörmungandr"/>
+                        <img src="/deagle_emeraldJormugandr.webp" alt="Desert Eagle | Emerald Jörmungandr"/>
                     </div>
                     <div className="skin-card--main">
                             <p>Desert Eagle | Emerald Jörmungandr</p>

@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Anime from 'react-anime'
 import Link from 'next/link'
 
+
 export default function Home() {
   return (
     <div className="container">
@@ -68,7 +69,7 @@ export default function Home() {
               <h3 className="section2-text--subtitle">Learn about trade ups and how to make profit of them</h3>
               <Link href="/tradeups"><button className="btn draw-border">More</button></Link>
             </div>  
-            <img src="tradeup.jpg" alt="tradeup" className="tradeup-img"/>
+            <img src='./tradeup.webp' alt="tradeup" className="tradeup-img"/>
         </div>
         <div className="section2-wrapper">
           <div className="section2-text">
@@ -76,7 +77,7 @@ export default function Home() {
               <h3 className="section2-text--subtitle">Learn about trade and how to make profit of them</h3>
               <Link href="/trade"><button className="btn draw-border">More</button></Link>
             </div>  
-          <img src="trade.jpg" alt="tradeup" className="trade-img"/>
+          <img src="trade.webp" alt="tradeup" className="trade-img"/>
           </div>
       </section>
      <Footer />

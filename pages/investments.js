@@ -75,11 +75,11 @@ const Investments = () => {
             <div className="good-investment"><p className="blog-p">You divided your bank into 10 parts and invested. 5 investments were not very successful and they grew by 1.5, 4 other investments turned out to be more successful and grew by 2.5 and the last investment turned out to be very successful and it grew by 5. 
             As a result, you increase your bank by (1.5 * 5 + 2.5 * 4 + 5) / 10 = 2.25. Net income is <span className="good-investment--span">1225 dollars</span></p></div>
             <p className="blog-p">Understanding when to buy : </p> 
-            <img src="/graphic.jpg" alt="steam graph" className="steam-graph"/>
+            <img src="/graphic.webp" alt="steam graph" className="steam-graph"/>
             <p className="blog-p">There are several ways to understand when to buy an investment, the easiest is to simply compare</p> 
 
-            <img src="/berlin2019.jpg" alt="berlin2019 sticker" className="berlin"/>
-            <img src="/london2018.jpg" alt="london2018 sticker" className="london"/>
+            <img src="/berlin2019.webp" alt="berlin2019 sticker" className="berlin"/>
+            <img src="/london2018.webp" alt="london2018 sticker" className="london"/>
             <p className="blog-p">In the pictures above two capsules from different majors, which took place in different years. 
             Because the capsules with the same growth graphs will be very similar, which gives us the opportunity to determine when to invest with a simple comparison. 
             Red circles indicate the degree of growth of the capsule from Berlin, as we can now see a great opportunity to invest in it.</p>
