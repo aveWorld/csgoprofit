@@ -927,6 +927,9 @@ to {
       flex-basis: 50%;
       margin: 2rem 2rem;
     }
+    .section1-wrapper {
+      background: url("/indexPage1_mobile.webp");
+    }
     
   }
 
