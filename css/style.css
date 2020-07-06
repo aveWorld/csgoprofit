@@ -76,15 +76,10 @@ body {
     border-bottom: #ef233c;
 }
 
-/* .logo {
-    width: 150px;
-    height: 80px;
-    margin-left: 4rem;
-    margin-bottom: 1rem;
-} */
 .logo {
-    color: white;
-    margin-left: 4rem;
+    margin-left: 5rem;
+    width: 140px;
+    padding-bottom: 5px;
 }
 
 
