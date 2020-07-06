@@ -63,7 +63,7 @@ const trade = () => {
             <p className="blog-p">WW - Well Worn, range from 0.38 - 0.44</p>
             <p className="blog-p">BS - Batle Scared, range from 0.44 - 1.0</p>
             <p className="blog-p">Some skins have their own rare floats, we will write about this skins in our <Link href="/blog"><a className="blog-link">Blog</a></Link>. Usually the lower the float, the better </p>
-            <h2 className="blog-subtitle">Patterns</h2>
+            <h2 className="blog-subtitle" id="patterns">Patterns</h2>
             <img src="patterns.webp" alt="pattern" className="patterns-img"/>
             <p className="blog-p">A pattern is a texture of paints that is applied to the skin. The game generates this texture randomly by moving the skin up/down/left/righ in any direction, 
                 thus making it look different. So this is the reason why two skins with same quality and exterior can look different from each other.</p>

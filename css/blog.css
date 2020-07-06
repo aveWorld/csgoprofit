@@ -18,12 +18,39 @@ h3 {
     color: #edf2f4;
 }
 
+.case-hardened--art {
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.case-hardened--art:hover h3{
+    color: rgb(7, 64, 95);
+    cursor: pointer;
+}
+.case-hardened--img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.case-hardened--art > h3 {
+   margin-right: 2rem;
+   margin-left: 3rem;
+   font-size: 2.6rem;
+   text-align: center;
+}
+
 .three-art {
-    padding-top: 8rem;
+    padding-top: 2rem;
     display: flex;
     width: 100%;
     /* flex-wrap: wrap; */
     border-bottom: 1px solid white;
+    border-top: 1px solid white;
     padding-bottom: 2rem;
 }
 
@@ -76,7 +103,7 @@ h3 {
 }
 
 .promocodes-art {
-    padding-top: 2rem;
+    padding-top: 8rem;
     position: relative;
     padding-bottom: 2rem;
 }
@@ -237,6 +264,37 @@ h3 {
     margin-top: 2rem;
 }
 
+/* case hardened styling */
+
+.case-hardened {
+    background: rgb(217,15,227);
+background: radial-gradient(circle, rgba(217,15,227,1) 5%, rgba(29,136,215,1) 29%, rgba(171,196,50,1) 80%);
+}
+
+.case-hardened > div > p {
+    font-size: 1.1rem;
+    color: black;
+}
+
+.case-hardened > div > img {
+    width: 100%;
+    height: auto;
+}
+
+.case-hardened--link {
+    color: rgb(217,15,227);
+}
+
+.overpay {
+    border-bottom: 3px solid rgb(217,15,227);;
+}
+
+.case-hardened--ul > li {
+    font-size: 1.1rem;
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
     .skin-cards {
@@ -267,6 +325,14 @@ h3 {
   }
 
   @media screen and (max-width: 768px) {
+    .case-hardened--art {
+       flex-wrap: wrap;
+       margin-bottom: 10rem;
+    }
+    
+    .case-hardened--img {
+        width: 100%;
+    }
     .three-art {
         flex-wrap: wrap;
         justify-content: center;
@@ -312,5 +378,9 @@ h3 {
 
     .promocodes-art--h1 {
         top: 15%;
+    }
+
+    .case-hardened--art {
+        height: 25rem;
     }
   }

@@ -13,6 +13,12 @@ const blog = () => (
         </Head>
         <Navbar />
         <main className="blog-wrapper">
+            <Link href="/promocodes">
+                <div className="promocodes-art">
+                    <h3 className="promocodes-art--h1">FREE SKINS</h3>
+                    <img src="/free-skins.webp" alt="free skins"/>
+                </div>
+            </Link>
             <div className="three-art">
                 <Link href="/blog/three-risky-tradeups">
                 <div className="article hover-green">
@@ -36,11 +42,13 @@ const blog = () => (
                 </div>
                 </Link>
             </div>
-            <Link href="/promocodes">
-                <div className="promocodes-art">
-                    <h3 className="promocodes-art--h1">FREE SKINS</h3>
-                    <img src="/free-skins.webp" alt="free skins"/>
+            <Link href="/blog/case-hardened-patterns">
+            <div className="case-hardened--art">
+                <h3>Case Hardened Pattern</h3>
+                <div>
+                    <img src="/casehardened_blue.webp" alt="" className="case-hardened--img"/>
                 </div>
+            </div>
             </Link>
         </main>
         <Footer />

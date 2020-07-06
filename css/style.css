@@ -872,6 +872,7 @@ to {
   @media screen and (max-width: 576px) {
     .container-wrapper {
       max-width: 90%;
+      text-align: center;
     }
     .male-icon {
         margin-left: 2rem;
