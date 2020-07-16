@@ -79,7 +79,7 @@ export async function getServerSideProps(context) {
     const cookies = parseCookies(context)
     // console.log(cookies)
     try {
-        const res = await fetch("http://localhost:3000/api/restapi");
+        const res = await fetch("/api/restapi");
         const json = await res.json();
         return {
             props: {
