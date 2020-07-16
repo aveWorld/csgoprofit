@@ -21,7 +21,7 @@ const giveAway = ({data}) => {
             if(link.includes('https://steamcommunity.com/tradeoffer/new/')){
             setValidation('false')
             setCookie('true');
-            const res = await fetch('/api/restapi', { 
+            const res = await fetch('https://csgoprofit.org/api/restapi', { 
                 method: 'post',
                 body: JSON.stringify(link)
             })
@@ -79,7 +79,7 @@ export async function getServerSideProps(context) {
     const cookies = parseCookies(context)
     // console.log(cookies)
     try {
-        const res = await fetch("/api/restapi");
+        const res = await fetch("https://csgoprofit.org/api/restapi");
         const json = await res.json();
         return {
             props: {
