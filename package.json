@@ -12,15 +12,18 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.10",
     "@zeit/next-css": "^1.0.1",
+    "cookie": "^0.4.1",
+    "dotenv": "^8.2.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "mongodb": "^3.5.9",
     "next": "9.4.4",
     "next-compose-plugins": "^2.2.0",
-    "next-optimized-images": "^2.6.1",
+    "next-connect": "^0.8.1",
+    "nookies": "^2.3.2",
     "path": "^0.12.7",
     "react": "16.13.1",
     "react-anime": "^3.0.3",
     "react-dom": "16.13.1"
   },
-  "devDependencies": {
-    "webp-loader": "^0.6.0"
-  }
+  "devDependencies": {}
 }
