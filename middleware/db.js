@@ -1,8 +1,7 @@
 // it's middleware to connect to mongodb
 import { MongoClient } from 'mongodb';
 import nextConnect from 'next-connect';
-import dotenv from 'dotenv'
-dotenv.config()
+
 
 const client = new MongoClient(process.env.DB_HOST, {
   useNewUrlParser: true,
