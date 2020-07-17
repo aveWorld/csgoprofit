@@ -39,7 +39,7 @@ const giveAway = ({data}) => {
     return (
     <main className="giveaway">
         <Head>
-            <title>CS GO Profit - Give Away</title>
+            <title>CS:GO Profit - Give Away Skins</title>
             <meta name="description" content="Win free CS:GO skins with CSGOPROFIT" />
         </Head>
         <Navbar />
