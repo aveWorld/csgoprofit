@@ -37,7 +37,7 @@ body {
 .Navbar {
     position: fixed;
     width: 100vw;
-    height: 8rem;
+    height: 7rem;
     background-color: transparent;
     /* background-color: rgba(0, 0, 0, .5); */
     z-index: 50;
@@ -81,6 +81,143 @@ body {
     width: 140px;
     padding-bottom: 5px;
     cursor: pointer;
+}
+
+/* mobile hamburger */
+
+.button_container {
+  position: fixed;
+  top: 6%;
+  right: 5%;
+  height: 32px;
+  width: 40px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+  display: none;
+}
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background: #ef233c;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: #ef233c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 
@@ -999,6 +1136,19 @@ to {
     .second-place {
       margin-top: 5rem;
     }
+
+    .button_container {
+      display: block;
+    }
+
+    .Navbar-ul {
+      display: none;
+    }
+
+    .Navbar:hover {
+      background-color: rgba(0, 0, 0, 0);
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width: 576px) {
@@ -1038,9 +1188,6 @@ to {
     }
     .section-title {
       padding-top: 3rem;
-    }
-    .Navbar {
-      background-color: rgba(0, 0, 0, .8);
     }
     .redline_stickers {
       width: 90%;

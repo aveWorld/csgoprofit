@@ -9,6 +9,7 @@ const client = new MongoClient(process.env.DB_HOST, {
 });
 
 async function database(req, res, next) {
+  console.log(process.env.DB_HOST)
   if (!client.isConnected()) {
       try {
         await client.connect();
