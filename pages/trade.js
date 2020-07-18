@@ -9,12 +9,12 @@ const trade = () => {
     return (
     <div className="container-blog">
         <Head>
-            <title>CS GO Trade</title>
-            <meta name="description" content="Learn how to make profit in CS GO trading" />
+            <title>CS:GO Trade</title>
+            <meta name="description" content="Learn how to make profit in CS:GO trading" />
         </Head>
         <Navbar />
         <main className="container-wrapper">
-            <h1 className="blog-title">CS GO Trade</h1>
+            <h1 className="blog-title">CS:GO Trade</h1>
             <p className="blog-p">Now it’s very easy to start trading and earning from 15% of your bank every month. 
             Each trader has their own schemes, but they all come down to one thing - reselling skins on different sites.</p>
             <p className="blog-p">Lets take a look at very popular scheme, we will buy skins on Steam with buy orders and sell with higher price.</p>

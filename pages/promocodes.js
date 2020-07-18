@@ -5,12 +5,12 @@ import Head from 'next/head'
 const promocodes = () => (
     <main className="promocodes">
          <Head>
-            <title>CS GO Promocodes</title>
-            <meta name="description" content="Earn free CS GO skins" />
+            <title>CS:GO Promocodes</title>
+            <meta name="description" content="Earn free CS:GO skins" />
         </Head>
         <Navbar />
         <div className="promocodes-h1">
-            <h1>Promo codes for free CS GO skins</h1>
+            <h1>Promo codes for free CS:GO skins</h1>
         </div>
         <Anime easing="easeOutQuart"
                 direction="normal"

@@ -11,8 +11,8 @@ const Investments = () => {
     return (
     <div className="container-blog">
         <Head>
-            <title>CS GO Investments</title>
-            <meta name="description" content="Learn how to make profitable investments in CS GO" />
+            <title>CS:GO Investments</title>
+            <meta name="description" content="Learn how to make profitable investments in CS:GO" />
         </Head>
         <Navbar />
         <main className="container-wrapper">

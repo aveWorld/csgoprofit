@@ -5,12 +5,12 @@ import Head from 'next/head'
 const expensiveSkins = () => (
     <article className="container-blog">
         <Head>
-            <title>The Top Tvelve Expensive Skins In CS GO</title>
-            <meta name="description" content="The Top Tvelve Expensive Skins In CS GO." />
+            <title>The Top Tvelve Expensive Skins In CS:GO</title>
+            <meta name="description" content="The Top Tvelve Expensive Skins In CS:GO." />
         </Head>
         <Navbar />
         <div className="container-wrapper">
-            <h1 className="blog-title">Top 12 Most Expensive CS GO Skins</h1>
+            <h1 className="blog-title">Top 12 Most Expensive CS:GO Skins</h1>
             <div>
                 <h3>12. AK-47 | WILD LOTUS (FACTORY NEW), price: 3800$</h3>
                 <img src="/wild_lotus.webp" alt="AK47 | Wild Lotus" className="img-width"/>

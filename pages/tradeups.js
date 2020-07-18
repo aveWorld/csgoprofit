@@ -5,12 +5,12 @@ const tradeups = () => {
     return (
         <div className="container-blog">
              <Head>
-            <title>CS GO Trade Ups</title>
-            <meta name="description" content="Learn about cool and profitable CS GO Trade Ups" />
+            <title>CS:GO Trade Ups</title>
+            <meta name="description" content="Learn about cool and profitable CS:GO Trade Ups" />
             </Head>
             <Navbar />
             <main className="container-wrapper">
-                <h1 className="blog-title">CS GO Trade Up Contracts</h1>
+                <h1 className="blog-title">CS:GO Trade Up Contracts</h1>
                 <p className="blog-p">skins in cs go are distributed among collections, each collection has</p>
                 <ul>
                 <p className="blog-p mill">Mil-Spec skins, least valuable skins, amount: 7</p>

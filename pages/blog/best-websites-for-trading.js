@@ -5,8 +5,8 @@ import Head from 'next/head'
 const tradingWebsites = () => (
     <article className="container-blog">
         <Head>
-            <title>Best Websites for CS GO trading</title>
-            <meta name="description" content="Lear about best websites for CS GO trading" />
+            <title>Best Websites for CS:GO trading</title>
+            <meta name="description" content="Lear about best websites for CS:GO trading" />
         </Head>
         <Navbar />
         <div className="container-wrapper">
