@@ -42,14 +42,24 @@ const blog = () => (
                 </div>
                 </Link>
             </div>
-            <Link href="/blog/case-hardened-patterns">
-            <div className="case-hardened--art">
-                <h3>Case Hardened Pattern</h3>
-                <div>
-                    <img src="/casehardened_blue.webp" alt="" className="case-hardened--img"/>
+            <div className="three-art">
+                <Link href="/blog/case-hardened-patterns">
+                <div className="article hover-yellow">
+                    <h3 className="article-title">Case Hardened Pattern</h3>
+                    <p className="article-subtitle">Take a look at case hardened pattern and his forms</p>
+                    <div>
+                        <img src="/casehardened_blue.webp" alt="" className="case-hardened--img"/>
+                    </div>
                 </div>
+                </Link>
+                <Link href="/blog/make-profit-on-shattered-web-operation">
+                <div className="article hover-orange">
+                    <h3 className="article-title">HOW TO MAKE PROFIT ON SHATTERED WEB OPERATION</h3>
+                    <p className="article-subtitle">Learn about different ways to make profit on Shattered Web operation</p>
+                    <img src="/shattered-web.webp" alt="" className="case-hardened--img"/>
+                </div>
+                </Link>
             </div>
-            </Link>
         </main>
         <Footer />
     </div>
