@@ -27,11 +27,11 @@ const blog = () => (
                     <img src="/tradeups.webp" alt="tradeups"/>
                 </div>
                 </Link>
-                <Link href="/blog/best-websites-for-trading">
+                <Link href="/blog/best-websites-for-csgo-trading">
                 <div className="article hover-yellow">
                     <h3 className="article-title">BEST WEBSITES FOR CS:GO TRADING</h3>
                     <p className="article-subtitle">You will find out websites with lowest commission, largest selection of skins and more...</p>
-                    <img src="/websites-for-csgo-trading.webp" alt="best website for trading"/>
+                    <img src="/websites-for-trading.webp" alt="best website for trading"/>
                 </div>
                 </Link>
                 <Link href="/blog/the-top-tvelve-expensive-skins-in-csgo">
