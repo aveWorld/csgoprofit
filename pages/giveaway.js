@@ -49,12 +49,12 @@ const giveAway = ({data}) => {
         <div className="place first-place">
             <h3>1st Place</h3>
             <p>AK-47 | Phantom Disruptor(FT)</p>
-            <img src="/phantom_disruption.png" alt="AK | Phantom Disruption"/>
+            <img src="/phantom_disruption.webp" alt="AK | Phantom Disruption"/>
         </div>
         <div className="place second-place">
             <h3>2nd Place</h3> 
             <p>USP-S | Cyrex(FT)</p>     
-            <img src="/usps_cyrex.png" alt="USP-S | Cyrex"/>
+            <img src="/usps_cyrex.webp" alt="USP-S | Cyrex"/>
         </div>
      </div>
      <div className="participating">Participating : {data.json.count}</div>

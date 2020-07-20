@@ -16,7 +16,7 @@ const Investments = () => {
         </Head>
         <Navbar />
         <main className="container-wrapper">
-            <h1 className="blog-title">CS GO Investments</h1>
+            <h1 className="blog-title">CS:GO Investments</h1>
             <p className="blog-p">If you want to get profit without wasting time, then investment is the perfect solution for you.
             All you have to do is invest in cs go items and wait until they grow in value.
             Basic investment principle is illustrated below.</p><br/>

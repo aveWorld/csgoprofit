@@ -14,7 +14,7 @@ const tradingWebsites = () => (
                 <h3><a href="https://loot.farm" className="websites-link" target="_blank">LOOT.Farm</a></h3>
                 <img src="/lootfarm-img.webp" alt="lootfarm image"/>
                 {/* <img src="" alt=""/> */}
-                <p>LOOT.Farm is automatic skin trade service.</p>
+                <p>LOOT.Farm is an automatic skin trade service.</p>
                 <p>On LOOT.Farm you are trading with bots, benefits from this type of trading are that you can sell you items intantly. 
                     Prices to every skin LOOT.Fram accepted you can on their <a href="https://loot.farm/en/pricelist.html" className="websites-link">pricelist</a>.</p>
                 <p className="advantages">Advantages</p> 
