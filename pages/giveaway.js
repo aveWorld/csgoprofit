@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-unfetch'
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { parseCookies, setCookie, destroyCookie } from 'nookies'
@@ -75,7 +75,7 @@ const giveAway = ({data}) => {
     )
  }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
     const cookies = parseCookies(context)
     // console.log(cookies)
     try {
