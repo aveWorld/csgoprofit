@@ -75,7 +75,7 @@ const giveAway = ({data}) => {
     )
  }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
     const cookies = parseCookies(context)
     // console.log(cookies)
     try {
