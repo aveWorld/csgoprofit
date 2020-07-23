@@ -250,9 +250,8 @@ h1 {
 background: radial-gradient(circle, rgba(217,15,227,1) 5%, rgba(29,136,215,1) 29%, rgba(171,196,50,1) 80%);
 }
 
-.case-hardened > div > p {
-    font-size: 1.1rem;
-    color: black;
+.color-white {
+    color: #edf2f4;
 }
 
 .case-hardened > div > img {
@@ -269,7 +268,8 @@ background: radial-gradient(circle, rgba(217,15,227,1) 5%, rgba(29,136,215,1) 29
 }
 
 .case-hardened--ul > li {
-    font-size: 1.1rem;
+    color: #edf2f4;
+    line-height: 1.7;
 }
 
 /* shattered web styling */
@@ -290,7 +290,7 @@ background: radial-gradient(circle, rgba(217,15,227,1) 5%, rgba(29,136,215,1) 29
 
 .image-optimization {
     width: 100%;
-    max-height: 100%;
+    max-height: auto;
 }
 
 .shattered-h3 {
