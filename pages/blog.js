@@ -65,7 +65,7 @@ const blog = () => (
                 <Link href="/blog/buy-stickers-from-boston2018">
                 <div className="article hover-green">
                     <h3 className="article-title">Buy CS:GO stickers from Boston 2018 Major!</h3>
-                    <p className="article-subtitle">Article explain why you should buy stickers from Boston 2018 Major right now</p>
+                    <p className="article-subtitle">Article explains why you should buy stickers from Boston 2018 Major right now</p>
                     <img src="/boston2018.webp" alt="Boston 2018 major" className="case-hardened--img"/>
                     <p className="article-date">Article Jul 23, 2020</p>
                 </div>
