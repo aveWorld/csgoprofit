@@ -1210,6 +1210,10 @@ to {
     .tradelink {
       width: 80%;
     }
+
+    #telegram {
+      margin-right: 1rem;
+    }
     
   }
 

@@ -401,4 +401,8 @@ background: radial-gradient(circle, rgba(217,15,227,1) 5%, rgba(29,136,215,1) 29
     .case-hardened--art {
         height: 25rem;
     }
+
+    .article-date {
+        padding-top: .5rem;
+    }
   }
