@@ -36,6 +36,11 @@ h1 {
     padding-bottom: 2rem;
 }
 
+/* use this class if only one article in row */
+.one-art {
+    justify-content: center;
+}
+
 
 .three-art img {
     width: 100%;

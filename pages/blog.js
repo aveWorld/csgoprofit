@@ -19,6 +19,42 @@ const blog = () => (
                     <img src="/free-skins.webp" alt="free skins"/>
                 </div>
             </Link>
+            <div className="three-art one-art">
+                 <Link href="/blog/two_low_risk_and_profitable_tradeups">
+                    <div className="article hover-green">
+                        <h3 className="article-title">Two Low Risk Tradeups With High Profitability</h3>
+                        <p className="article-subtitle">Take a look at two low risk tradeups with profitability 120%+</p>
+                        <img src="/tradeups.webp" alt="tradeups"/>
+                        <p className="article-date">Article Jul 29, 2020</p>
+                    </div>
+                </Link>
+            </div>
+            <div className="three-art">
+            <Link href="/blog/buy-stickers-from-boston2018">
+                <div className="article hover-green">
+                    <h3 className="article-title">Buy CS:GO stickers from Boston 2018 Major!</h3>
+                    <p className="article-subtitle">Article explains why you should buy stickers from Boston 2018 Major right now</p>
+                    <img src="/boston2018.webp" alt="Boston 2018 major" className="case-hardened--img"/>
+                    <p className="article-date">Article Jul 23, 2020</p>
+                </div>
+                </Link>
+                <Link href="/blog/make-profit-on-shattered-web-operation">
+                <div className="article hover-orange">
+                    <h3 className="article-title">HOW TO MAKE PROFIT ON SHATTERED WEB OPERATION</h3>
+                    <p className="article-subtitle">Learn about different ways to make profit on Shattered Web operation</p>
+                    <img src="/shattered-web.webp" alt="Shattered Web" className="case-hardened--img"/>
+                    <p className="article-date">Article Jul 20, 2020</p>
+                </div>
+                </Link>
+                <Link href="/blog/case-hardened-patterns">
+                <div className="article hover-yellow">
+                    <h3 className="article-title">Case Hardened Pattern</h3>
+                    <p className="article-subtitle">Take a look at case hardened pattern and his forms</p>
+                    <img src="/casehardened_blue.webp" alt="AK47 | Case Hardened" className="case-hardened--img"/>
+                    <p className="article-date">Article Jul 6, 2020</p>
+                </div>
+                </Link>
+            </div>
             <div className="three-art">
                 <Link href="/blog/three-risky-tradeups">
                 <div className="article hover-green">
@@ -45,32 +81,7 @@ const blog = () => (
                 </div>
                 </Link>
             </div>
-            <div className="three-art">
-                <Link href="/blog/case-hardened-patterns">
-                <div className="article hover-yellow">
-                    <h3 className="article-title">Case Hardened Pattern</h3>
-                    <p className="article-subtitle">Take a look at case hardened pattern and his forms</p>
-                    <img src="/casehardened_blue.webp" alt="AK47 | Case Hardened" className="case-hardened--img"/>
-                    <p className="article-date">Article Jul 6, 2020</p>
-                </div>
-                </Link>
-                <Link href="/blog/make-profit-on-shattered-web-operation">
-                <div className="article hover-orange">
-                    <h3 className="article-title">HOW TO MAKE PROFIT ON SHATTERED WEB OPERATION</h3>
-                    <p className="article-subtitle">Learn about different ways to make profit on Shattered Web operation</p>
-                    <img src="/shattered-web.webp" alt="Shattered Web" className="case-hardened--img"/>
-                    <p className="article-date">Article Jul 20, 2020</p>
-                </div>
-                </Link>
-                <Link href="/blog/buy-stickers-from-boston2018">
-                <div className="article hover-green">
-                    <h3 className="article-title">Buy CS:GO stickers from Boston 2018 Major!</h3>
-                    <p className="article-subtitle">Article explains why you should buy stickers from Boston 2018 Major right now</p>
-                    <img src="/boston2018.webp" alt="Boston 2018 major" className="case-hardened--img"/>
-                    <p className="article-date">Article Jul 23, 2020</p>
-                </div>
-                </Link>
-            </div>
+            
         </main>
         <Footer />
     </div>
