@@ -9,7 +9,7 @@ import Head from 'next/head'
 
 const giveAway = ({data}) => {
     // console.log(data.cookies.participate, data.json.doc, data.json.count)
-    const [cookie, setCookie] = useState(data.cookies.participate)
+    // const [cookie, setCookie] = useState(data.cookies.participate)
     const [link, setLink] = useState("");
     const [validation, setValidation] = useState("false");
     const getLink = e => {
@@ -57,7 +57,12 @@ const giveAway = ({data}) => {
             <img src="/usps_cyrex.webp" alt="USP-S | Cyrex"/>
         </div>
      </div>
-     <div className="participating">Participating : {data.json.count}</div>
+     <div className="winners">
+        <h3 className="blog-p">Winners:</h3>
+        <p className="blog-p">1st place https://steamcommunity.com/tradeoffer/new/?partner=856203282</p>
+        <p className="blog-p">2nd place https://steamcommunity.com/tradeoffer/new/?partner=269487032</p>
+     </div>
+     {/* <div className="participating">Participating : {data.json.count}</div>
      <p className="giveaway-winners">winners will be announced 30.07.2020</p>
       {cookie? (
           <div className="participate-true">You are participating!</div>
@@ -68,7 +73,7 @@ const giveAway = ({data}) => {
             <p className="incorrent-tradelink" style={validation=='true'?{display:"block"} : {display:"none"}}>incorrent tradelink!</p>
             <button onClick={updateMacros} className="btn draw-border giveaway-btn">Participate</button>
         </div>
-      )}
+      )} */}
       </div>
       <Footer />
     </main>
@@ -76,18 +81,23 @@ const giveAway = ({data}) => {
  }
 
 export async function getServerSideProps(context) {
-    const cookies = parseCookies(context)
-    // console.log(cookies)
-    try {
-        const res = await fetch("https://csgoprofit.org/api/restapi");
-        const json = await res.json();
-        return {
-            props: {
-            data: {json, cookies},
-            },
-        };
-    } catch {
-        console.log('can not fetch data from db')
+    // const cookies = parseCookies(context)
+    // // console.log(cookies)
+    // try {
+    //     const res = await fetch("https://csgoprofit.org/api/restapi");
+    //     const json = await res.json();
+    //     return {
+    //         props: {
+    //         data: {json, cookies},
+    //         },
+    //     };
+    // } catch {
+    //     console.log('can not fetch data from db')
+    // }
+    return {
+        props: {
+            giveaway: 'giveaway end'
+        }
     }
     
 }
