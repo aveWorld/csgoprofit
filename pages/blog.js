@@ -20,6 +20,14 @@ const blog = () => (
                 </div>
             </Link>
             <div className="three-art one-art">
+                <Link href="/blog/fracture_case_and_crash_of_shatteredWeb">
+                    <div className="article hover-orange">
+                        <h3 className="article-title">New Fracture Case And Crash of Shattered Web Case</h3>
+                        <p className="article-subtitle">Lookout of new Fracture Case and explaining price droping of shattered web</p>
+                        <img src="/fracture_collection.webp" alt="tradeups"/>
+                        <p className="article-date">Article Aug 7, 2020</p>
+                    </div>
+                </Link>
                  <Link href="/blog/two_low_risk_and_profitable_tradeups">
                     <div className="article hover-green">
                         <h3 className="article-title">Two Low Risk Tradeups With High Profitability</h3>

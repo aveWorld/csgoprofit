@@ -1065,6 +1065,34 @@ to {
     margin-top: 0;
   }
 
+  /* quiz styling */
+  .questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .quiz-item {
+    border: 1px solid black;
+    flex-basis: 40%;
+    margin: 1rem;
+  }
+
+  .quiz-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .quiz-block {
+    text-align: center;
+  }
+
+  .quiz {
+    background-color: #2b2d42;
+  }
+
 
 
 @media screen and (max-width: 1200px) {

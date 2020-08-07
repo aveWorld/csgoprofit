@@ -317,6 +317,26 @@ background: radial-gradient(circle, rgba(217,15,227,1) 5%, rgba(29,136,215,1) 29
     margin-right: 4px;
 }
 
+/* fracture case styling */
+.fracturecase-img {
+    width: 30%;
+    height: auto;
+}
+
+.fracture-img {
+    width: 50%;
+    height: auto;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.pad {
+    padding: 1rem 0;
+}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -409,5 +429,15 @@ background: radial-gradient(circle, rgba(217,15,227,1) 5%, rgba(29,136,215,1) 29
 
     .article-date {
         padding-top: .5rem;
+    }
+
+    .fracture-img {
+        width: 90%;
+        height: auto;
+    }
+
+    .fracturecase-img {
+        width: 90%;
+        height: auto;
     }
   }
