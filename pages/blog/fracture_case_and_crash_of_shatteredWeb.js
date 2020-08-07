@@ -5,8 +5,8 @@ import Head from 'next/head'
 const FractureCase = () => (
     <article className="container-blog">
         <Head>
-            <title>Best Websites for CS:GO trading</title>
-            <meta name="description" content="Lear about best websites for CS:GO trading" />
+            <title>Fracture Case and price droping of Shattered Web Case</title>
+            <meta name="description" content="Lookout of new Fracture Case and explaining price droping of shattered web" />
         </Head>
         <Navbar />
         <div className="container-wrapper">
