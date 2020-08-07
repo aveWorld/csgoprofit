@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://csgoprofit.org/sitemap.xml
+Sitemap: https://csgoprofit.org/blog.xml
