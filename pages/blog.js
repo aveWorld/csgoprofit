@@ -23,7 +23,7 @@ const blog = () => (
                 <Link href="/blog/fracture_case_and_crash_of_shatteredWeb">
                     <div className="article hover-orange">
                         <h3 className="article-title">New Fracture Case And Crash of Shattered Web Case</h3>
-                        <p className="article-subtitle">Lookout of new Fracture Case and explaining price droping of shattered web</p>
+                        <p className="article-subtitle">Lookout of new Fracture Case and explaining price dropping of shattered web</p>
                         <img src="/fracture_collection.webp" alt="tradeups"/>
                         <p className="article-date">Article Aug 7, 2020</p>
                     </div>
