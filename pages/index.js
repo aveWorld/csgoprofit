@@ -67,7 +67,7 @@ export default function Home() {
           <div className="section2-text">
               <h1 className="section2-text--title">CS GO Tradeups</h1>
               <h3 className="section2-text--subtitle">Learn about trade ups and how to make profit of them</h3>
-              <Link href="/tradeups"><button className="btn draw-border">More</button></Link>
+              <Link href="/tradeups"><a className="btn draw-border">More</a></Link>
             </div>  
             <img src='./tradeup.webp' alt="tradeup" className="tradeup-img"/>
         </div>

@@ -17,6 +17,9 @@ body {
         line-height: 1.7;
         letter-spacing: normal;
     }
+    a {
+      text-decoration: none;
+  }
 
 /* custom scrollbar     */
 ::-webkit-scrollbar {
@@ -387,6 +390,8 @@ body {
     font: 700 1.2rem 'Roboto Slab', sans-serif;
     padding: 1em 2em;
     letter-spacing: 0.05rem;
+    width: 30%;
+    text-align: center;
   }
   .btn:focus {
     outline: 2px dotted #55d7dc;
@@ -1093,7 +1098,14 @@ to {
     background-color: #2b2d42;
   }
 
-
+  @media screen and (max-width: 1400px) {
+    .section-title {
+      padding-top: 5rem;
+    }
+    .section-subtitle {
+      margin: 0;
+    }
+  }
 
 @media screen and (max-width: 1200px) {
     .container-wrapper {
@@ -1246,6 +1258,10 @@ to {
     }
     .section1-wrapper {
       background: url("/indexPage1_mobile.webp");
+    }
+
+    .btn {
+      width: 35%;
     }
 
     .tradelink {
