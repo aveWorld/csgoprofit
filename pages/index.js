@@ -40,7 +40,7 @@ export default function Home() {
           <div className="section2-text">
             <h1 className="section2-text--title">CS GO Investments</h1>
             <h3 className="section2-text--subtitle">Learn about invesments and how to make profit of them</h3>
-            <Link href="/investments"><button className="btn draw-border">More</button></Link>
+            <Link href="/investments"><a className="btn draw-border">More</a></Link>
           </div>  
           <svg viewBox="0 0 150 150" className="chart">
         
@@ -75,7 +75,7 @@ export default function Home() {
           <div className="section2-text">
               <h1 className="section2-text--title">CS GO Trade</h1>
               <h3 className="section2-text--subtitle">Learn about trade and how to make profit of them</h3>
-              <Link href="/trade"><button className="btn draw-border">More</button></Link>
+              <Link href="/trade"><a className="btn draw-border">More</a></Link>
             </div>  
           <img src="trade.webp" alt="tradeup" className="trade-img"/>
           </div>
