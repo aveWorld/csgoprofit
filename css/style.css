@@ -397,6 +397,21 @@ body {
     outline: 2px dotted #55d7dc;
   }
 
+  .btn-inv {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: .7em 2em;
+    letter-spacing: 0.05rem;
+    /* text-align: center; */
+  }
+  .btn-inv:focus {
+    outline: 2px dotted #55d7dc;
+  }
+
+
   /* section 2 */
 
   .section-2 {
@@ -1098,6 +1113,114 @@ to {
     background-color: #2b2d42;
   }
 
+  /* inventory value styling */
+  .inventory-container {
+    text-align: center;
+    color: white;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .inventory-title {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .inv-value {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .inv-better {
+    padding-top: 1rem;
+  }
+
+  .inv-err {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .loader {
+    font-family: sans-serif;
+    height: 5vh;
+    left: 50%;
+    /* overflow-x: hidden; */
+    margin-top: 5rem;
+    padding-top: 3rem;
+    position: relative;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    color: #edf2f4;
+  }
+  .loader:before {
+    animation: left-to-right 1.5s alternate infinite linear;
+    background-image: linear-gradient(to right, transparent, red, transparent);
+    content: "";
+    height: 3vh;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .loader:after {
+    background-image: repeating-linear-gradient(90deg, #2b2d42, #2b2d42 1vw, transparent 1vw, transparent 10vw);
+    content: "";
+    height: 3vh;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .inventories {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    padding-bottom: 2rem;
+  }
+
+  .inventories > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .inventories > li > span {
+    padding: 1rem;
+  }
+
+  .top-inventories--name {
+    width: 20%;
+  }
+
+  .top-inventories--title {
+    text-align: center;
+    color: white;
+    padding: 4rem 0 2rem 0;
+  }
+
+  .color-white {
+    color: white;
+  }
+  
+  @keyframes left-to-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+
   @media screen and (max-width: 1400px) {
     .section-title {
       padding-top: 5rem;
@@ -1202,6 +1325,13 @@ to {
       background-color: rgba(0, 0, 0, 0);
       opacity: 1;
     }
+
+    .inventories > li > a > img {
+      width: 100px;
+    }
+    .top-inventories--name {
+      width: 40%;
+    }
   }
 
   @media screen and (max-width: 576px) {
@@ -1270,6 +1400,13 @@ to {
 
     #telegram {
       margin-right: 1rem;
+    }
+
+    .inventories {
+      justify-content: start;
+    }
+    .inventories > li > span {
+      padding: .5rem;
     }
     
   }

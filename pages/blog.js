@@ -20,6 +20,14 @@ const blog = () => (
                 </div>
             </Link>
             <div className="three-art one-art">
+                <Link href="/csgo-inventory-value">
+                    <a className="article hover-yellow">
+                        <h3 className="article-title">Check your inventory value</h3>
+                        <p className="article-subtitle">Check your inventory value with our new tool, also check top CS:GO inventories.</p>
+                        <img src="/inventory.webp" alt="inventory"/>
+                        <p className="article-date">Article Aug 11, 2020</p>
+                    </a>
+                </Link>
                 <Link href="/blog/fracture_case_and_crash_of_shatteredWeb">
                     <a className="article hover-orange">
                         <h3 className="article-title">New Fracture Case And Crash of Shattered Web Case</h3>
