@@ -39,6 +39,7 @@ const tradeups = () => {
                 <p className="blog-p"><span className="max-float">Max Float</span> - maximal float of outputs</p>
                 <p className="blog-p"><span className="min-float">Min Float</span> - minimal float of outputs</p>
                 <p className="blog-p"><span className="avg">AVG</span> - sum of your all input floats divided by their amount</p>
+                <p className="blog-p">To better understand how trade ups work, I advise you to look at <a href="https://tradeupacademy.org">CS:GO Trade Up Simulator</a></p>
             </main>
             <Footer />
         </div>
