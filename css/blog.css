@@ -71,7 +71,8 @@ h1 {
 
 .article-subtitle {
     color: #edf2f4;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding: .1rem 0;
 }
 
 .hover-green:hover .article-title{
