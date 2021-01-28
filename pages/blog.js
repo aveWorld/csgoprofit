@@ -24,7 +24,7 @@ const blog = () => (
         <Link href="/blog/new-pmr-update">
           <a className="article hover-orange">
             <h3 className="article-title">New PMR capsules</h3>
-            <p className="article-subtitle">Lookout of new capsules from 2021 PMR update.</p>
+            <p className="article-subtitle">Lookout of new capsules from 2021 CS:GO PMR update.</p>
             <img src="/PMR.webp" alt="inventory" />
             <p className="article-date">Article Jan 28, 2021</p>
           </a>
