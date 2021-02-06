@@ -30,6 +30,7 @@ const PmrUpdate = () => (
         lost up to -20% in some positions. And I am sure that this is far from the end: after all,
         many investors will continue to drain old capsules in panic.
       </p>
+      <p>28.01.2021</p>
     </div>
     <Footer />
   </article>
