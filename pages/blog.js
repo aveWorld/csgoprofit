@@ -61,7 +61,7 @@ const blog = () => (
             <p className="article-date">Article Aug 7, 2020</p>
           </a>
         </Link>
-        <Link href="/blog/two_low_risk_and_profitable_tradeups">
+        <Link href="/blog/two-low-risk-and-profitable-tradeups">
           <a className="article hover-green">
             <h3 className="article-title">Two Low Risk Tradeups With High Profitability</h3>
             <p className="article-subtitle">
