@@ -434,6 +434,7 @@ a {
 
 .section2-text--subtitle {
   color: white;
+  font-size: 1.1rem;
 }
 
 .tradeup-img {
@@ -1244,7 +1245,7 @@ a {
 @media screen and (max-width: 996px) {
   .section2-wrapper {
     display: block;
-    padding: 1rem 0;
+    padding: 1rem 10px;
   }
   .section2-wrapper h3 {
     text-align: center;

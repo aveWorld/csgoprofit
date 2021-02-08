@@ -21,6 +21,14 @@ const blog = () => (
         </a>
       </Link>
       <div className="three-art one-art">
+        <Link href="/blog/team-liquid-new-logo">
+          <a className="article hover-orange">
+            <h3 className="article-title">Team Liquid New Logo</h3>
+            <p className="article-subtitle">What would happen with price</p>
+            <img src="/new_team_liquid_logo.webp" alt="inventory" />
+            <p className="article-date">Article Feb 08, 2021</p>
+          </a>
+        </Link>
         <Link href="/blog/new-pmr-update">
           <a className="article hover-orange">
             <h3 className="article-title">New PMR capsules</h3>
