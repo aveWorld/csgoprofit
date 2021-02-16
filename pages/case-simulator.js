@@ -33,7 +33,7 @@ export default function openCase() {
       <div className="open-case">
         <h1 className="open-case__title">Free CS:GO open case simulator</h1>
         <div className="cases__blocks">
-          <Link href="/csgo-inventory-value">
+          <Link href="/case-simulator/broken-fang">
             <a className="case__block">
               <div className="case__block__img-bg">
                 <img src="/broken_fang_img.png" alt="" className="case__block__img-bg__img" />
