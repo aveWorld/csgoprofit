@@ -1,7 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Link from 'next/link';
-import '../css/blog.css';
 import Head from 'next/head';
 
 const blog = () => (

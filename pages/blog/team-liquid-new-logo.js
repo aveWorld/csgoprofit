@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../css/blog.css';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Head from 'next/head';
