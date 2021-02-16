@@ -14,8 +14,10 @@
     "@zeit/next-css": "^1.0.1",
     "cheerio": "^1.0.0-rc.3",
     "cookie": "^0.4.1",
+    "d3-ease": "^2.0.0",
     "isomorphic-unfetch": "^3.0.0",
     "mongodb": "^3.5.9",
+    "nanoid": "^3.1.20",
     "next": "9.4.4",
     "next-compose-plugins": "^2.2.0",
     "next-connect": "^0.8.1",
@@ -24,7 +26,12 @@
     "react": "16.13.1",
     "react-anime": "^3.0.3",
     "react-dom": "16.13.1",
-    "request": "^2.88.2"
+    "react-spring": "^8.0.27",
+    "request": "^2.88.2",
+    "resize-observer-polyfill": "^1.5.1",
+    "url-loader": "^4.1.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "file-loader": "^6.2.0"
+  }
 }
