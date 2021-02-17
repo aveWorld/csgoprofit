@@ -19,7 +19,12 @@
 </url>
 <url>
 <loc>https://csgoprofit.org/promocodes</loc>
-<lastmod>2021-01-28T09:20:36+00:00</lastmod>
+<lastmod>2021-02-17T21:37:26+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://csgoprofit.org/case-simulator</loc>
+<lastmod>2021-02-17T21:37:26+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
@@ -100,6 +105,21 @@
 <url>
 <loc>https://csgoprofit.org/blog/team-liquid-new-logo</loc>
 <lastmod>2021-02-08T14:14:04+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://csgoprofit.org/case-simulator/broken-fang</loc>
+<lastmod>2021-02-17T21:37:26+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://csgoprofit.org/case-simulator/hydra</loc>
+<lastmod>2021-02-17T21:37:26+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://csgoprofit.org/case-simulator/operation-bravo</loc>
+<lastmod>2021-02-17T21:37:26+00:00</lastmod>
 <priority>0.64</priority>
 </url>
 
