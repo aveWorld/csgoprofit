@@ -1,4 +1,6 @@
 import { nanoid } from 'nanoid';
+import { shuffle } from '../utils/shuffle';
+
 const awp = require('../assets/broken-fang/awp_exoskeleton.png');
 const berettas = require('../assets/broken-fang/berettas_dezastre.png');
 const cz75 = require('../assets/broken-fang/cz75_vendetta.png');
@@ -136,14 +138,14 @@ const red_guns = guns.filter((item) => item.type === 'red');
 const rare_guns = guns.filter((item) => item.type === 'rare');
 
 let i = 0;
-while (blue_guns.length < 89) {
+while (blue_guns.length < 102) {
   const item_tmp = { ...blue_guns[i] };
   item_tmp.id = nanoid();
   blue_guns.push(item_tmp);
   i++;
 }
 i = 0;
-while (purple_guns.length < 26) {
+while (purple_guns.length < 20) {
   const item_tmp = { ...purple_guns[i] };
   item_tmp.id = nanoid();
   purple_guns.push(item_tmp);
@@ -151,7 +153,7 @@ while (purple_guns.length < 26) {
 }
 
 i = 0;
-while (pink_guns.length < 9) {
+while (pink_guns.length < 7) {
   const item_tmp = { ...pink_guns[i] };
   item_tmp.id = nanoid();
   pink_guns.push(item_tmp);
@@ -159,7 +161,7 @@ while (pink_guns.length < 9) {
 }
 
 i = 0;
-while (red_guns.length < 3) {
+while (red_guns.length < 2) {
   const item_tmp = { ...red_guns[i] };
   item_tmp.id = nanoid();
   red_guns.push(item_tmp);
@@ -167,26 +169,6 @@ while (red_guns.length < 3) {
 }
 
 let data = [...blue_guns, ...purple_guns, ...pink_guns, ...red_guns, ...rare_guns];
-
-function shuffle(array) {
-  let currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
 
 data = shuffle(data);
 

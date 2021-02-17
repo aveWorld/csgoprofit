@@ -1,8 +1,8 @@
 import React from 'react';
 import Roullete from '../../components/Roullete';
 
-import { data } from '../../data/brokenFang';
+import { data } from '../../data/bravo';
 
-export default function BrokenFang() {
+export default function Bravo() {
   return <Roullete data={data} />;
 }

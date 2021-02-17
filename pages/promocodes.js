@@ -68,11 +68,7 @@ const promocodes = () => (
         <div className="card">
           <div className="card-header">
             <a href="https://csgopolygon.com/" target="_blank">
-              <img
-                src="csgopoligon.svg"
-                alt="csgopolygon"
-                className="card-img"
-              />
+              <img src="csgopoligon.svg" alt="csgopolygon" className="card-img" />
             </a>
           </div>
           <div className="card-main">
@@ -155,20 +151,30 @@ const promocodes = () => (
         </div>
         <div className="card">
           <div className="card-header">
-            <a href="https://csgoempire.com/r/PROFITCS" target="_blank">
-              <img
-                src="csgoempire.webp"
-                alt="csgoempire"
-                className="card-img"
-              />
+            <a href="https://www.csgolive.com/home" target="_blank">
+              <img src="csgolive.webp" alt="csgolive" className="card-img" />
+            </a>
+          </div>
+          <div className="card-main">
+            <p>0.5 $</p>
+          </div>
+          <div className="card-footer">
+            <h5>csgolive promocode</h5>
+            <p>csprofit</p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-header">
+            <a href="https://rustshuffle.com/?refid=0e282ccb80185b7f" target="_blank">
+              <img src="/rustsshuffle.png" alt="csgoempire" className="card-img" />
             </a>
           </div>
           <div className="card-main">
             <p>0.75 $</p>
           </div>
           <div className="card-footer">
-            <h5>csgoempire promocode</h5>
-            <p>PROFITCS</p>
+            <h5>rustshuffle promocode</h5>
+            <p>it's promo link</p>
           </div>
         </div>
       </div>
