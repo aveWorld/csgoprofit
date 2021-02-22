@@ -5,6 +5,8 @@ import { useAudio } from '../hooks/useAudio';
 import * as easings from 'd3-ease';
 
 import audioFile from '../assets/audio/open_1_4.mp3';
+import Loader from './Loader';
+import useLayoutEffect from './useIsomorphicLayoutEffect';
 
 function Roullete({ data }) {
   const [toggleAudio] = useAudio(audioFile);
@@ -18,16 +20,18 @@ function Roullete({ data }) {
   const [animate, setAnimate] = useState(false);
   const [canAnimate, setCanAnimate] = useState(true);
   const [modal, setModal] = useState(false);
+  const [firstAnimation, setFirstAnimation] = useState(true);
   const [disableAnim, setDisable] = useState(false);
   const [winnerBlock, setWinnerBlock] = useState();
   const [scrollStep, setStep] = useState(1.11);
+  const [loaded, setLoaded] = useState(false);
   const { o } = useSpring({
     o: animate ? 1 : 0,
     from: { o: 0 },
     immediate: disableAnim,
     onRest: () => {
       setDisable(true);
-      if (!modal && !disableAnim) setModal(true);
+      if (!modal && !disableAnim && !firstAnimation) setModal(true);
       setCanAnimate(true);
     },
     reset: true,
@@ -48,6 +52,7 @@ function Roullete({ data }) {
 
   const handleClick = () => {
     setDisable(false);
+    if (firstAnimation) setFirstAnimation(false);
     toggleAudio();
     setCanAnimate(false);
     if (winnerBlock) {
@@ -80,6 +85,9 @@ function Roullete({ data }) {
   }, []);
   return (
     <>
+      <div style={loaded ? { display: 'none' } : { display: 'block' }}>
+        <Loader />
+      </div>
       <div className="blur"></div>
       <div className="case">
         <div className="blocks">
@@ -95,7 +103,10 @@ function Roullete({ data }) {
             className="blocks__wrapper"
             {...bind}
           >
-            {arr.map((e) => {
+            {arr.map((e, index) => {
+              if (index === arr.length - 1) {
+                if (!loaded) setLoaded(true);
+              }
               return (
                 <div
                   key={e.id}
@@ -122,7 +133,7 @@ function Roullete({ data }) {
           Roll
         </button>
         <animated.div
-          style={{ opacity, display: modal ? 'flex' : 'none' }}
+          style={{ opacity, display: modal && disableAnim ? 'flex' : 'none' }}
           className={`${arr[winnerBlock]?.type} winner__block`}
         >
           <img src={arr[winnerBlock]?.img} alt="" />
