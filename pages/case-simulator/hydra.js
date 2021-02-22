@@ -4,5 +4,5 @@ import Roullete from '../../components/Roullete';
 import { data } from '../../data/hydra';
 
 export default function Hydra() {
-  return <Roullete data={data} />;
+  return <Roullete data={data} casePrice={Number(6.9)} />;
 }

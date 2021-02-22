@@ -8,8 +8,10 @@ import audioFile from '../assets/audio/open_1_4.mp3';
 import Loader from './Loader';
 import useLayoutEffect from './useIsomorphicLayoutEffect';
 
-function Roullete({ data }) {
+function Roullete({ data, casePrice }) {
   const [toggleAudio] = useAudio(audioFile);
+  const [possibleIncome, setIncome] = useState(0);
+  const caseKeyPrice = 2.3;
   const [bind, { width: screenWidth }] = useMeasure();
   const blocksAmount = 110;
   const blocksOnScreen = screenWidth > 776 ? 6 : screenWidth > 460 ? 4 : 2;
@@ -31,7 +33,9 @@ function Roullete({ data }) {
     immediate: disableAnim,
     onRest: () => {
       setDisable(true);
-      if (!modal && !disableAnim && !firstAnimation) setModal(true);
+      if (!modal && !disableAnim && !firstAnimation) {
+        setModal(true);
+      }
       setCanAnimate(true);
     },
     reset: true,
@@ -71,8 +75,7 @@ function Roullete({ data }) {
         Math.ceil(scrollWidth / (screenWidth / blocksOnScreen + gap + 0.1)) + blocksOffset; // 6 - amount of blocks on a screen, + 2 because we start with 3-rd block
     } else {
       winnerIndex =
-        Math.round(scrollWidth / (screenWidth / blocksOnScreen + gap + 0.1)) + blocksOffset; // 6 - amount of blocks on a screen, + 2 because we start with 3-rd block
-      console.log(scrollWidth / (screenWidth / blocksOnScreen + gap + 0.3));
+        Math.round(scrollWidth / (screenWidth / blocksOnScreen + gap) - 0.3) + blocksOffset; // 6 - amount of blocks on a screen, + 2 because we start with 3-rd block
     }
     if (roundNumber) winnerIndex = Math.round(winnerIndex - 0.6);
     setWinnerBlock(winnerIndex);
@@ -84,6 +87,12 @@ function Roullete({ data }) {
   useEffect(() => {
     setArr(data);
   }, []);
+
+  useEffect(() => {
+    if (!firstAnimation && modal) {
+      setIncome((prev) => prev + arr[winnerBlock]?.price - casePrice - caseKeyPrice);
+    }
+  }, [modal]);
   return (
     <>
       <div style={loaded ? { display: 'none' } : { display: 'block' }}>
@@ -133,6 +142,10 @@ function Roullete({ data }) {
         >
           Roll
         </button>
+        <div className="case__profit__block">
+          profit:
+          <div>{possibleIncome.toFixed(2)}$</div>
+        </div>
         <animated.div
           style={{ opacity, display: modal && disableAnim ? 'flex' : 'none' }}
           className={`${arr[winnerBlock]?.type} winner__block`}

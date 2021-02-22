@@ -1468,6 +1468,20 @@ body {
   overflow-x: hidden;
 }
 
+.case__profit__block {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  color: red;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.case__profit__block > div {
+  padding-left: 8px;
+}
+
 .blur {
   filter: blur(4px);
   background-image: url('/indexPage1.webp');
