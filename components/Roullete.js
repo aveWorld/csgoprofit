@@ -12,10 +12,10 @@ function Roullete({ data }) {
   const [toggleAudio] = useAudio(audioFile);
   const [bind, { width: screenWidth }] = useMeasure();
   const blocksAmount = 110;
-  const blocksOnScreen = screenWidth > 776 ? 6 : screenWidth > 460 ? 4 : 3;
+  const blocksOnScreen = screenWidth > 776 ? 6 : screenWidth > 460 ? 4 : 2;
   const blocksOffset = screenWidth > 776 ? 2 : screenWidth > 460 ? 1 : 1;
   const roundNumber = screenWidth < 460 ? true : false;
-  const gap = 5;
+  const gap = screenWidth < 460 ? 3 : 5;
   const fullWidth = (blocksAmount * (screenWidth - 5 * gap)) / blocksOnScreen;
   const [animate, setAnimate] = useState(false);
   const [canAnimate, setCanAnimate] = useState(true);
@@ -71,7 +71,8 @@ function Roullete({ data }) {
         Math.ceil(scrollWidth / (screenWidth / blocksOnScreen + gap + 0.1)) + blocksOffset; // 6 - amount of blocks on a screen, + 2 because we start with 3-rd block
     } else {
       winnerIndex =
-        Math.round(scrollWidth / (screenWidth / blocksOnScreen + gap + 0.1)) + blocksOffset + 1; // 6 - amount of blocks on a screen, + 2 because we start with 3-rd block
+        Math.round(scrollWidth / (screenWidth / blocksOnScreen + gap + 0.1)) + blocksOffset; // 6 - amount of blocks on a screen, + 2 because we start with 3-rd block
+      console.log(scrollWidth / (screenWidth / blocksOnScreen + gap + 0.3));
     }
     if (roundNumber) winnerIndex = Math.round(winnerIndex - 0.6);
     setWinnerBlock(winnerIndex);
