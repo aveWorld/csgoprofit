@@ -20,6 +20,16 @@ const blog = () => (
         </a>
       </Link>
       <div className="three-art one-art">
+        <Link href="/blog/open-case-simulator">
+          <a className="article hover-orange">
+            <h3 className="article-title">Open Case Simulator</h3>
+            <p className="article-subtitle">Lookout of our new CS:GO open case simulator</p>
+            <img src="/case-simul.webp" alt="inventory" />
+            <p className="article-date">Article Feb 23, 2021</p>
+          </a>
+        </Link>
+      </div>
+      <div className="three-art one-art">
         <Link href="/blog/team-liquid-new-logo">
           <a className="article hover-orange">
             <h3 className="article-title">Team Liquid New Logo</h3>
