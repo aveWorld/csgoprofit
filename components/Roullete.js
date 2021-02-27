@@ -3,10 +3,10 @@ import { useSpring, animated } from 'react-spring';
 import useMeasure from '../hooks/useMeasure';
 import { useAudio } from '../hooks/useAudio';
 import * as easings from 'd3-ease';
+import Navbar from './Navbar';
 
 import audioFile from '../assets/audio/open_1_4.mp3';
 import Loader from './Loader';
-import useLayoutEffect from './useIsomorphicLayoutEffect';
 
 function Roullete({ data, casePrice }) {
   const [toggleAudio] = useAudio(audioFile);
@@ -95,6 +95,7 @@ function Roullete({ data, casePrice }) {
   }, [modal]);
   return (
     <>
+      <Navbar />
       <div style={loaded ? { display: 'none' } : { display: 'block' }}>
         <Loader />
       </div>

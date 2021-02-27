@@ -6,7 +6,7 @@ import Head from 'next/head';
 const blog = () => (
   <div className="blog">
     <Head>
-      <title>CS:GO Profit - Blog</title>
+      <title>Blog</title>
       <meta name="description" content="All about CS:GO Investments, Contracts, Trade and more" />
     </Head>
     <Navbar />

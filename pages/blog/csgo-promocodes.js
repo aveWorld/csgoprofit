@@ -6,7 +6,7 @@ import Head from 'next/head';
 const promocodes = () => (
   <article className="container-blog">
     <Head>
-      <title>CS GO Promo Codes - CSGOPROFIT</title>
+      <title>CS GO Promo Codes</title>
       <meta
         name="description"
         content="Find out about CS GO promo codes, why they exists and where to find them."

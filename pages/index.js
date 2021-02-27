@@ -15,7 +15,7 @@ export default function Home() {
         />
       </Head>
       <Navbar />
-      <section className="section-1">
+      <section className="section-1 wrapper">
         <div className="section1-wrapper">
           <div className="line">
             <svg
@@ -99,7 +99,8 @@ export default function Home() {
           <div className="section2-text">
             <h3 className="section2-text--title">CS GO Investments</h3>
             <h5 className="section2-text--subtitle">
-              Learn about invesments and how to make profit of them
+              CS:GO investments are an essential skill you should know to make stable income every
+              month. You gonna learn two main principles on CS:GO investing
             </h5>
             <Link href="/investments">
               <a className="btn draw-border">More</a>
@@ -126,9 +127,10 @@ export default function Home() {
         </div>
         <div className="section2-wrapper">
           <div className="section2-text">
-            <h3 className="section2-text--title">CS GO Tradeups</h3>
+            <h3 className="section2-text--title">CS GO Trade Ups</h3>
             <h5 className="section2-text--subtitle">
-              Learn about trade ups and how to make profit of them
+              CS:GO trade ups are a fun and risky thing to do. But good tradeups can give you huge
+              profit. You gonna learn about the main formula of CS:GO tradeups
             </h5>
             <Link href="/tradeups">
               <a className="btn draw-border">More</a>
@@ -140,7 +142,9 @@ export default function Home() {
           <div className="section2-text">
             <h3 className="section2-text--title">CS GO Trade</h3>
             <h5 className="section2-text--subtitle">
-              Learn about trade and how to make profit of them
+              CS:GO trade is the oldest method of making profit on CS:GO. It can be insanely
+              profitable if you're aware of what to do. You gonna learn the main concept and schemes
+              of CS:GO trade
             </h5>
             <Link href="/trade">
               <a className="btn draw-border">More</a>
