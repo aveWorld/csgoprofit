@@ -1,13 +1,15 @@
 const withPlugins = require('next-compose-plugins');
 const withCSS = require('@zeit/next-css');
+const optimizedImages = require('next-optimized-images');
 
 module.exports = withPlugins([
   [withCSS, {}],
+  [optimizedImages, {}],
   {
     webpack(config, options) {
       const { isServer } = options;
       config.module.rules.push({
-        test: /\.(ogg|mp3|wav|mpe|png?g)$/i,
+        test: /\.(ogg|mp3|wav|mpe?g)$/i,
         exclude: config.exclude,
         use: [
           {
@@ -15,6 +17,23 @@ module.exports = withPlugins([
             options: {
               limit: config.inlineImageLimit,
               fallback: require.resolve('file-loader'),
+              publicPath: `${config.assetPrefix}/_next/static/images/`,
+              outputPath: `${isServer ? '../' : ''}static/images/`,
+              name: '[name]-[hash].[ext]',
+              esModule: config.esModule || false,
+            },
+          },
+        ],
+      });
+
+      config.module.rules.push({
+        test: /\.(webp|png?g)$/i,
+        exclude: config.exclude,
+        use: [
+          {
+            loader: require.resolve('url-loader'),
+            options: {
+              limit: config.inlineImageLimit,
               publicPath: `${config.assetPrefix}/_next/static/images/`,
               outputPath: `${isServer ? '../' : ''}static/images/`,
               name: '[name]-[hash].[ext]',

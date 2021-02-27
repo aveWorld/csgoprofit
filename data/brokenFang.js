@@ -1,24 +1,61 @@
 import { nanoid } from 'nanoid';
 import { shuffle } from '../utils/shuffle';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-const awp = require('../assets/broken-fang/awp_exoskeleton.png');
-const berettas = require('../assets/broken-fang/berettas_dezastre.png');
-const cz75 = require('../assets/broken-fang/cz75_vendetta.png');
-const five_seven = require('../assets/broken-fang/five_seven_tale.png');
-const g3sg1 = require('../assets/broken-fang/g3sg1_mesh.png');
-const galil = require('../assets/broken-fang/galil_vandal.png');
-const glock = require('../assets/broken-fang/glock_noir.png');
-const hands_wrap = require('../assets/broken-fang/hand-wraps_caution.png');
-const m4a1 = require('../assets/broken-fang/m4a1-s_printstream.png');
-const m4a4 = require('../assets/broken-fang/m4a4_security.png');
-const m249 = require('../assets/broken-fang/m249_relief.png');
-const mp5 = require('../assets/broken-fang/mp5-sd_zero.png');
-const nova = require('../assets/broken-fang/nova_polymer.png');
-const p90 = require('../assets/broken-fang/p90_cocoa.png');
-const p250 = require('../assets/broken-fang/p250_contaminant.png');
-const ssg = require('../assets/broken-fang/ssg_parallax.png');
-const ump = require('../assets/broken-fang/ump_bismuth.png');
-const usp_s = require('../assets/broken-fang/usp-s_mashup.png');
+const awp = isWebpSupported
+  ? require('../assets/broken-fang/awp_exoskeleton.webp')
+  : require('../assets/broken-fang/awp_exoskeleton.png');
+const berettas = isWebpSupported
+  ? require('../assets/broken-fang/berettas_dezastre.webp')
+  : require('../assets/broken-fang/berettas_dezastre.png');
+const cz75 = isWebpSupported
+  ? require('../assets/broken-fang/cz75_vendetta.webp')
+  : require('../assets/broken-fang/cz75_vendetta.png');
+const five_seven = isWebpSupported
+  ? require('../assets/broken-fang/five_seven_tale.webp')
+  : require('../assets/broken-fang/five_seven_tale.png');
+const g3sg1 = isWebpSupported
+  ? require('../assets/broken-fang/g3sg1_mesh.webp')
+  : require('../assets/broken-fang/g3sg1_mesh.png');
+const galil = isWebpSupported
+  ? require('../assets/broken-fang/galil_vandal.webp')
+  : require('../assets/broken-fang/galil_vandal.png');
+const glock = isWebpSupported
+  ? require('../assets/broken-fang/glock_noir.webp')
+  : require('../assets/broken-fang/glock_noir.png');
+const hands_wrap = isWebpSupported
+  ? require('../assets/broken-fang/hand-wraps_caution.webp')
+  : require('../assets/broken-fang/hand-wraps_caution.png');
+const m4a1 = isWebpSupported
+  ? require('../assets/broken-fang/m4a1-s_printstream.webp')
+  : require('../assets/broken-fang/m4a1-s_printstream.png');
+const m4a4 = isWebpSupported
+  ? require('../assets/broken-fang/m4a4_security.webp')
+  : require('../assets/broken-fang/m4a4_security.png');
+const m249 = isWebpSupported
+  ? require('../assets/broken-fang/m249_relief.webp')
+  : require('../assets/broken-fang/m249_relief.png');
+const mp5 = isWebpSupported
+  ? require('../assets/broken-fang/mp5-sd_zero.webp')
+  : require('../assets/broken-fang/mp5-sd_zero.png');
+const nova = isWebpSupported
+  ? require('../assets/broken-fang/nova_polymer.webp')
+  : require('../assets/broken-fang/nova_polymer.png');
+const p90 = isWebpSupported
+  ? require('../assets/broken-fang/p90_cocoa.webp')
+  : require('../assets/broken-fang/p90_cocoa.png');
+const p250 = isWebpSupported
+  ? require('../assets/broken-fang/p250_contaminant.webp')
+  : require('../assets/broken-fang/p250_contaminant.png');
+const ssg = isWebpSupported
+  ? require('../assets/broken-fang/ssg_parallax.webp')
+  : require('../assets/broken-fang/ssg_parallax.png');
+const ump = isWebpSupported
+  ? require('../assets/broken-fang/ump_bismuth.webp')
+  : require('../assets/broken-fang/ump_bismuth.png');
+const usp_s = isWebpSupported
+  ? require('../assets/broken-fang/usp-s_mashup.webp')
+  : require('../assets/broken-fang/usp-s_mashup.png');
 
 const guns = [
   {

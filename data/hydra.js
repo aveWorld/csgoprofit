@@ -1,24 +1,61 @@
 import { nanoid } from 'nanoid';
 import { shuffle } from '../utils/shuffle';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-const awp = require('../assets/hydra/awp_taiji.png');
-const berettas = require('../assets/hydra/berettas_cobra.png');
-const five_seven = require('../assets/hydra/five_seven_hyper.png');
-const galil = require('../assets/hydra/galil_sugar.png');
-const hands_wrap = require('../assets/hydra/gloves_emerald.png');
-const m4a1 = require('../assets/hydra/m4a1_briefing.png');
-const m4a4 = require('../assets/hydra/m4a4_hellfire.png');
-const p90 = require('../assets/hydra/p90_grip.png');
-const p250 = require('../assets/hydra/p250_rock.png');
-const ssg = require('../assets/hydra/ssg_head.png');
-const ump = require('../assets/hydra/ump45_flowers.png');
-const usp_s = require('../assets/hydra/usp_blueprint.png');
-const ak47 = require('../assets/hydra/ak47_orbit.png');
-const famas = require('../assets/hydra/famas_macabre.png');
-const mac10 = require('../assets/hydra/mac10_aloha.png');
-const mag7 = require('../assets/hydra/mag7_water.png');
-const p2000 = require('../assets/hydra/p200_woodsman.png');
-const tec9 = require('../assets/hydra/tec9_cut.png');
+const awp = isWebpSupported
+  ? require('../assets/hydra/awp_taiji.webp')
+  : require('../assets/hydra/awp_taiji.png');
+const berettas = isWebpSupported
+  ? require('../assets/hydra/berettas_cobra.webp')
+  : require('../assets/hydra/berettas_cobra.png');
+const five_seven = isWebpSupported
+  ? require('../assets/hydra/five_seven_hyper.webp')
+  : require('../assets/hydra/five_seven_hyper.png');
+const galil = isWebpSupported
+  ? require('../assets/hydra/galil_sugar.webp')
+  : require('../assets/hydra/galil_sugar.png');
+const hands_wrap = isWebpSupported
+  ? require('../assets/hydra/gloves_emerald.webp')
+  : require('../assets/hydra/gloves_emerald.png');
+const m4a1 = isWebpSupported
+  ? require('../assets/hydra/m4a1_briefing.webp')
+  : require('../assets/hydra/m4a1_briefing.png');
+const m4a4 = isWebpSupported
+  ? require('../assets/hydra/m4a4_hellfire.webp')
+  : require('../assets/hydra/m4a4_hellfire.png');
+const p90 = isWebpSupported
+  ? require('../assets/hydra/p90_grip.webp')
+  : require('../assets/hydra/p90_grip.png');
+const p250 = isWebpSupported
+  ? require('../assets/hydra/p250_rock.webp')
+  : require('../assets/hydra/p250_rock.png');
+const ssg = isWebpSupported
+  ? require('../assets/hydra/ssg_head.webp')
+  : require('../assets/hydra/ssg_head.png');
+const ump = isWebpSupported
+  ? require('../assets/hydra/ump45_flowers.webp')
+  : require('../assets/hydra/ump45_flowers.png');
+const usp_s = isWebpSupported
+  ? require('../assets/hydra/usp_blueprint.webp')
+  : require('../assets/hydra/usp_blueprint.png');
+const ak47 = isWebpSupported
+  ? require('../assets/hydra/ak47_orbit.webp')
+  : require('../assets/hydra/ak47_orbit.png');
+const famas = isWebpSupported
+  ? require('../assets/hydra/famas_macabre.webp')
+  : require('../assets/hydra/famas_macabre.png');
+const mac10 = isWebpSupported
+  ? require('../assets/hydra/mac10_aloha.webp')
+  : require('../assets/hydra/mac10_aloha.png');
+const mag7 = isWebpSupported
+  ? require('../assets/hydra/mag7_water.webp')
+  : require('../assets/hydra/mag7_water.png');
+const p2000 = isWebpSupported
+  ? require('../assets/hydra/p200_woodsman.webp')
+  : require('../assets/hydra/p200_woodsman.png');
+const tec9 = isWebpSupported
+  ? require('../assets/hydra/tec9_cut.webp')
+  : require('../assets/hydra/tec9_cut.png');
 
 const guns = [
   {

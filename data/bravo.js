@@ -1,22 +1,55 @@
 import { nanoid } from 'nanoid';
 import { shuffle } from '../utils/shuffle';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-const awp = require('../assets/bravo/awp_graphite.png');
-const ak47 = require('../assets/bravo/ak47_serpent.png');
-const berettas = require('../assets/bravo/berettas_limba.png');
-const deagle = require('../assets/bravo/deagle_koi.png');
-const g3sg1 = require('../assets/bravo/g3sg1_demeter.png');
-const galil = require('../assets/bravo/galil_shattered.png');
-const m4a1 = require('../assets/bravo/m4a1_water.png');
-const m4a4 = require('../assets/bravo/m4a4_zirka.png');
-const mac10 = require('../assets/bravo/mac10_graven.png');
-const nova = require('../assets/bravo/nova_tempest.png');
-const p90 = require('../assets/bravo/p90_dragon.png');
-const p2000 = require('../assets/bravo/p2000_ocean.png');
-const sg = require('../assets/bravo/sg_wave.png');
-const ump = require('../assets/bravo/ump-45_bone.png');
-const usp = require('../assets/bravo/usp_overgrowth.png');
-const knife = require('../assets/bravo/flip_slaughter.png');
+const awp = isWebpSupported
+  ? require('../assets/bravo/awp_graphite.webp')
+  : require('../assets/bravo/awp_graphite.png');
+const ak47 = isWebpSupported
+  ? require('../assets/bravo/ak47_serpent.webp')
+  : require('../assets/bravo/ak47_serpent.png');
+const berettas = isWebpSupported
+  ? require('../assets/bravo/berettas_limba.webp')
+  : require('../assets/bravo/berettas_limba.png');
+const deagle = isWebpSupported
+  ? require('../assets/bravo/deagle_koi.webp')
+  : require('../assets/bravo/deagle_koi.png');
+const g3sg1 = isWebpSupported
+  ? require('../assets/bravo/g3sg1_demeter.webp')
+  : require('../assets/bravo/g3sg1_demeter.png');
+const galil = isWebpSupported
+  ? require('../assets/bravo/galil_shattered.webp')
+  : require('../assets/bravo/galil_shattered.png');
+const m4a1 = isWebpSupported
+  ? require('../assets/bravo/m4a1_water.webp')
+  : require('../assets/bravo/m4a1_water.png');
+const m4a4 = isWebpSupported
+  ? require('../assets/bravo/m4a4_zirka.webp')
+  : require('../assets/bravo/m4a4_zirka.png');
+const mac10 = isWebpSupported
+  ? require('../assets/bravo/mac10_graven.webp')
+  : require('../assets/bravo/mac10_graven.png');
+const nova = isWebpSupported
+  ? require('../assets/bravo/nova_tempest.webp')
+  : require('../assets/bravo/nova_tempest.png');
+const p90 = isWebpSupported
+  ? require('../assets/bravo/p90_dragon.webp')
+  : require('../assets/bravo/p90_dragon.png');
+const p2000 = isWebpSupported
+  ? require('../assets/bravo/p2000_ocean.webp')
+  : require('../assets/bravo/p2000_ocean.png');
+const sg = isWebpSupported
+  ? require('../assets/bravo/sg_wave.webp')
+  : require('../assets/bravo/sg_wave.png');
+const ump = isWebpSupported
+  ? require('../assets/bravo/ump-45_bone.webp')
+  : require('../assets/bravo/ump-45_bone.png');
+const usp = isWebpSupported
+  ? require('../assets/bravo/usp_overgrowth.webp')
+  : require('../assets/bravo/usp_overgrowth.png');
+const knife = isWebpSupported
+  ? require('../assets/bravo/flip_slaughter.webp')
+  : require('../assets/bravo/flip_slaughter.png');
 
 const guns = [
   {
