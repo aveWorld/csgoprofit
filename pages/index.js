@@ -1,15 +1,13 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Anime from 'react-anime';
 import Link from 'next/link';
 import Loader from '../components/Loader';
-import useIsomorphicLayout from '../components/useIsomorphicLayoutEffect';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
-  useIsomorphicLayout(() => {
+  useEffect(() => {
     setLoaded(true);
   }, []);
   if (!loaded) return <Loader />;
