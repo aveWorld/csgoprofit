@@ -927,6 +927,7 @@ a {
 }
 
 .card-main {
+  padding: 10px 0;
   border-bottom: 1px solid #457b9d;
 }
 
@@ -940,6 +941,10 @@ a {
   text-align: center;
   font-size: 1.4rem;
   color: #edf2f4;
+}
+
+.card-footer {
+  padding: 10px 0;
 }
 
 .card-footer > p {
