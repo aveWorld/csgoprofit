@@ -109,8 +109,34 @@ h1 {
 
 /* top skins styling */
 
+.container-wrapper {
+  min-height: calc(100vh - 80px);
+}
+
+.container-wrapper > h1 {
+  line-height: 2.2;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.container-wrapper > h3 {
+  line-height: 2;
+  padding-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
 .container-wrapper > div {
   padding: 1rem 0;
+}
+
+.container-wrapper > p {
+  padding: 0.5rem 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.container-wrapper > img {
+  margin: 1rem 0;
 }
 
 .img-width {
