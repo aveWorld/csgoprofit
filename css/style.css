@@ -609,7 +609,7 @@ a {
 
 .bad-investment {
   border: 2px solid red;
-  padding: 0rem 1rem;
+  padding: 1rem 0.5rem !important;
   margin: 1rem 0 1rem 0;
 }
 
@@ -619,7 +619,7 @@ a {
 
 .good-investment {
   border: 2px solid green;
-  padding: 0rem 1rem;
+  padding: 1rem 0.5rem !important;
   margin: 1rem 0 1rem 0;
 }
 
@@ -791,7 +791,7 @@ a {
 
 .distribution {
   border: 1px solid #ffd700;
-  padding: 5px 0 5px 5px;
+  padding: 5px 5px !important;
 }
 
 .quality-item {
@@ -897,7 +897,7 @@ a {
 }
 
 .promocodes-h1 {
-  padding-top: 4rem;
+  padding-top: 8rem;
   color: #edf2f4;
   text-align: center;
   width: 80%;
@@ -1243,11 +1243,24 @@ a {
 .cases__blocks {
   margin: 50px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.open-case__subtitle {
+  margin-top: 20px;
+  color: #edf2f4;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 28px;
+  position: relative;
+  width: 100%;
+}
+
+.open-case__subtitle > span {
+  border-bottom: 3px solid #ef233c;
 }
 
 .case__block {
-  width: 33%;
   position: relative;
   display: flex;
   align-items: center;
@@ -1300,6 +1313,10 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
+.case__block__price {
+  transition: all 0.5s ease-in-out;
+}
+
 .case__block__text__hover {
   color: #ef233c;
   transform: translateX(20px);
@@ -1314,7 +1331,8 @@ a {
 
 .open-case {
   width: 100vw;
-  height: calc(100vh - 5rem);
+  min-height: calc(100vh - 80px);
+  padding-bottom: 50px;
 }
 
 body {
@@ -1541,6 +1559,19 @@ body {
   padding-top: 50px !important;
 }
 
+.clutch-bg {
+  width: 75% !important;
+  margin: 10px auto 0;
+  display: block;
+  padding-top: 50px !important;
+}
+
+.fracture-bg {
+  width: 65% !important;
+  margin: -8px auto 0px;
+  display: block;
+}
+
 .bravo-bg__block {
   transform: rotate(20deg);
 }
@@ -1765,9 +1796,15 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .quality {
+    flex-wrap: wrap;
+  }
   .container-wrapper {
     max-width: 90%;
     text-align: center;
+  }
+  .blog-p {
+    text-align: left;
   }
   .male-icon {
     margin-left: 2rem;
@@ -1859,11 +1896,19 @@ body {
     width: 80%;
   }
   .section2-text--subtitle {
+    text-align: left;
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .cases__blocks {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .case__block {
+    width: 100%;
+  }
   .section-title {
     font-size: 3.5rem;
     padding-top: 8rem;

@@ -11,7 +11,7 @@ const promocodes = () => (
     <Navbar />
     <div className="promocodes-h1">
       <h1>CS GO Promo codes for free CS GO skins</h1>
-      <h3>Earn free skins with CS GO promocodes</h3>
+      <h3>Earn free skins with CS GO promo codes</h3>
     </div>
     <Anime
       easing="easeOutQuart"

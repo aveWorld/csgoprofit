@@ -12,11 +12,13 @@ export default function openCase() {
         block.childNodes[1].classList.add('case__hover');
         block.childNodes[0].childNodes[0].classList.add('case__bg-img__hover');
         block.childNodes[2].classList.add('case__block__text__hover');
+        block.childNodes[3].classList.add('case__block__text__hover');
       });
       block.childNodes[1].addEventListener('mouseleave', () => {
         block.childNodes[1].classList.remove('case__hover');
         block.childNodes[0].childNodes[0].classList.remove('case__bg-img__hover');
         block.childNodes[2].classList.remove('case__block__text__hover');
+        block.childNodes[3].classList.remove('case__block__text__hover');
       });
     });
     return () => {
@@ -46,16 +48,10 @@ export default function openCase() {
       <Navbar />
       <div className="open-case">
         <h1 className="open-case__title">Free CS:GO open case simulator</h1>
+        <h3 className="open-case__subtitle">
+          <span>Expensive Cases</span>
+        </h3>
         <div className="cases__blocks">
-          <Link href="/case-simulator/broken-fang">
-            <a className="case__block">
-              <div className="case__block__img-bg">
-                <img src="/broken_fang_img.png" alt="" className="case__block__img-bg__img" />
-              </div>
-              <img src="/broken_fang_case.png" alt="broken fang" className="case__block__img" />
-              <h3 className="case__block__text">Broken Fang Case</h3>
-            </a>
-          </Link>
           <Link href="/case-simulator/hydra">
             <a className="case__block">
               <div className="case__block__img-bg hydra-bg">
@@ -63,6 +59,7 @@ export default function openCase() {
               </div>
               <img src="/hydra_case.png" alt="broken fang" className="case__block__img" />
               <h3 className="case__block__text">Hydra Case</h3>
+              <p className="case__block__price">case price: 6.9$</p>
             </a>
           </Link>
           <Link href="/case-simulator/operation-bravo">
@@ -76,6 +73,51 @@ export default function openCase() {
               </div>
               <img src="/bravo_case.png" alt="broken fang" className="case__block__img" />
               <h3 className="case__block__text">Operation Bravo Case</h3>
+              <p className="case__block__price">case price: 25.53$</p>
+            </a>
+          </Link>
+        </div>
+        <h3 className="open-case__subtitle">
+          <span>Cheap Cases</span>
+        </h3>
+        <div className="cases__blocks">
+          <Link href="/case-simulator/broken-fang">
+            <a className="case__block">
+              <div className="case__block__img-bg">
+                <img src="/broken_fang_img.png" alt="" className="case__block__img-bg__img" />
+              </div>
+              <img src="/broken_fang_case.png" alt="broken fang" className="case__block__img" />
+              <h3 className="case__block__text">Broken Fang Case</h3>
+              <p className="case__block__price">case price: 0.71$</p>
+            </a>
+          </Link>
+
+          <Link href="/case-simulator/clutch-case">
+            <a className="case__block">
+              <div className="case__block__img-bg bravo-bg__block">
+                <img
+                  src="/ClutchCaseLogo.png"
+                  alt=""
+                  className="case__block__img-bg__img clutch-bg"
+                />
+              </div>
+              <img src="/clutchCase.png" alt="broken fang" className="case__block__img" />
+              <h3 className="case__block__text">Clutch Case</h3>
+              <p className="case__block__price">case price: 0.25$</p>
+            </a>
+          </Link>
+          <Link href="/case-simulator/fracture-case">
+            <a className="case__block">
+              <div className="case__block__img-bg">
+                <img
+                  src="/FractureCaseLogo.png"
+                  alt=""
+                  className="case__block__img-bg__img fracture-bg"
+                />
+              </div>
+              <img src="/fractureCase.png" alt="broken fang" className="case__block__img" />
+              <h3 className="case__block__text">Fracture Case</h3>
+              <p className="case__block__price">case price: 0.55$</p>
             </a>
           </Link>
         </div>
