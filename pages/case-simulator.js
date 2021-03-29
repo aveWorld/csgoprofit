@@ -96,7 +96,7 @@ export default function openCase() {
             <a className="case__block">
               <div className="case__block__img-bg bravo-bg__block">
                 <img
-                  src="/ClutchCaseLogo.png"
+                  src="/clutchCaseLogo.png"
                   alt=""
                   className="case__block__img-bg__img clutch-bg"
                 />
@@ -110,7 +110,7 @@ export default function openCase() {
             <a className="case__block">
               <div className="case__block__img-bg">
                 <img
-                  src="/FractureCaseLogo.png"
+                  src="/fractureCaseLogo.png"
                   alt=""
                   className="case__block__img-bg__img fracture-bg"
                 />
