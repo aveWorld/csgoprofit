@@ -17,7 +17,7 @@
     "d3-ease": "^2.0.0",
     "isomorphic-unfetch": "^3.0.0",
     "mongodb": "^3.5.9",
-    "nanoid": "^3.1.20",
+    "nanoid": "^3.1.31",
     "next": "9.4.4",
     "next-compose-plugins": "^2.2.0",
     "next-connect": "^0.8.1",
